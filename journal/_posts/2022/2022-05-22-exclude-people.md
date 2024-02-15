@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: excludepeople
+categories: journal
+---
+
+# Proudly exclude people
+
+You can afford to leave people out. If you make something for everyone, you end up making something for no one. Publish your work with confidence and irreverence. Will it turn some people off? Sure. But it's better to gain a few quality fans than a lot of useless eyeballs. Convert someone for life, not for the day. In turn, they will always support you in anything that you do.
+
+Find your voice. Shout it from rooftops. Keep doing it until the people that are looking for you find you (Dan Harmon said that, not me).
+
+Some of your own friends and family may not like what you do - and that's okay! A few of them will! Be sure and take good care of the people that like what you do. Show them that you know that they are there and that you appreciate them - genuinely!
+
+You can't find your voice if you don't use it.

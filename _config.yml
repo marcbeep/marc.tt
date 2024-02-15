@@ -1,0 +1,13 @@
+# Site settings
+title: Marc Beepath
+tag_text: Marc Beepath's personal website
+description: Marc Beepath's personal website, written in markdown.
+url: "https://marcbeep.com"
+plugins:
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed
