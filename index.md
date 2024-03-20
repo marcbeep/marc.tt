@@ -4,12 +4,12 @@ layout: default
 
 # Marc Beepath
 
-I've studied Computer Science at the University of Liverpool & the founded [ReefLink Labs](https://reeflink.org). 
+I've studied Computer Science at the University of Liverpool & I founded [ReefLink Labs](https://reeflink.org). 
 
 ### Key bits about me:
 
 * Here's my [latest CV](/assets/cv.pdf).
-* I write journal articles. You can read them [here](/journal) or subscribe via my [substack](https://marcbeep.substack.com).
+* I write short journal articles. You can read them [here](/journal) or subscribe via my [substack](https://marcbeep.substack.com).
 
 ### Some other facts:
 
