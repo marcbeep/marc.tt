@@ -8,7 +8,7 @@ I'm a postgraduate Computer Science student at the University of Liverpool.
 
 ### What I do in my free time
 
-* I started [ReefLink Labs](https://reeflink.org) with my friend Ebin to work on independent Software Development Projects. 
+* I started [ReefLink Labs](https://reeflinklabs.com) with my friend Ebin to work on independent Software Development Projects. 
 * I started [Marc's Fieldnotes](https://www.youtube.com/@marcsfieldnotes) to document my learning and experiences.
 * Subscribe to my [newsletter](https://marcbeep.substack.com), or read all my articles [here](/fieldnotes).
 
