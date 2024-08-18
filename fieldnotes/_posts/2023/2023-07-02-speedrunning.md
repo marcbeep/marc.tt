@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: speedrunning
-categories: journal
+categories: fieldnotes
 ---
 
 # Speed running in your 20s

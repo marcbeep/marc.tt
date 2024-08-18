@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: firststartup
-categories: journal
+categories: fieldnotes
 ---
 
 # I launched my first startup

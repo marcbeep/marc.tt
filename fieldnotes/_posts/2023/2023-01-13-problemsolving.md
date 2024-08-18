@@ -1,7 +1,7 @@
 ---
 permalink: problemsolving
 layout: default
-categories: journal
+categories: fieldnotes
 ---
 
 # A new approach to problem solving

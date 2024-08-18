@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: perfectionism
-categories: journal
+categories: fieldnotes
 ---
 
 # Perfectionism is a lazy excuse for fear

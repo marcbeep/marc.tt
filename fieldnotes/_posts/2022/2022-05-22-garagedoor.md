@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: garagedoor
-categories: journal
+categories: fieldnotes
 ---
 
 # Work with the garage door up

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: excludepeople
-categories: journal
+categories: fieldnotes
 ---
 
 # Proudly exclude people

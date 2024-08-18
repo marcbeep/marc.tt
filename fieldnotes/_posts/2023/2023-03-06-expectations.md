@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: expectations
-categories: journal
+categories: fieldnotes
 ---
 
 # Letting go of expectations

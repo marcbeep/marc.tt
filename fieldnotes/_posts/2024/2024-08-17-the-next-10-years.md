@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: 10years
-categories: journal
+categories: fieldnotes
 ---
 
 # My Plan for the Next 10 Years
