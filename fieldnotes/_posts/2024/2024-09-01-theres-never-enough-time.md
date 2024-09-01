@@ -10,7 +10,7 @@ categories: fieldnotes
 
 > This blog post has been made into a short film which was shot entirely on my old camcorder. Watch it [here](https://www.youtube.com/watch?v=uq06JJG6YeU).
 
-There's so many things to do, but it seems like there's never enough time to do it.
+There are so many things to do, but it seems like there's never enough time to do them all.
 Go to the gym, cook, study, go to work, read a bit, speak to friends - blah blah blah. 
 Sometimes it seems like there's a never ending checklist of things to do.
 As I spoke about in my post [Speedrunning in your 20s](/speedrunning), we want our lives to improve but we want it to improve immediately.
