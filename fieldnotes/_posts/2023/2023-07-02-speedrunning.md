@@ -6,7 +6,7 @@ categories: fieldnotes
 
 # Speed running in your 20s
 
-![speedrunning-cover](../assets/speedrunning-cover.png)
+![speedrunning-cover](/assets/covers/speedrunning.png)
 
 A common feeling amongst people my age is to have everything in their life sorted by the age of 30.
 

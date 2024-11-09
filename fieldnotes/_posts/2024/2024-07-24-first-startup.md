@@ -6,7 +6,7 @@ categories: fieldnotes
 
 # I launched my first startup
 
-![first-startup](/assets/first-startup.png)
+![first-startup](/assets/covers/firststartup.png)
 
 Two weeks ago, I launched CVFish - a job tracking app for recent graduates. It was my first “startup”, and if you’ve been following along, I’ve been making content about it over at marcsfieldnotes (on YouTube, Instagram, Twitter, TikTok).
 

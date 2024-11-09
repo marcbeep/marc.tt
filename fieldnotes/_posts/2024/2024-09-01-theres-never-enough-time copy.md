@@ -6,7 +6,7 @@ categories: fieldnotes
 
 # There's Never Enough Time
 
-![10years](/assets/no-time-cover.png)
+![10years](/assets/covers/notime.png)
 
 > This blog post has been made into a short film which was shot entirely on my old camcorder. Watch it [here](https://www.youtube.com/watch?v=uq06JJG6YeU).
 

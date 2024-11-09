@@ -6,7 +6,7 @@ categories: fieldnotes
 
 # My Plan for the Next 10 Years
 
-![10years](/assets/10years-cover.png)
+![10years](/assets/covers/10years.png)
 
 > This blog post has been made into a short film. Watch it [here](https://www.youtube.com/watch?v=TU-UJ9Y7rr8).
 
