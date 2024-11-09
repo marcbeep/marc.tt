@@ -22,3 +22,10 @@ It'll take me to a third party webpage where I can get some info on the product 
 * Sustainability metrics (water usage, CO2 usage, recyclable content)
 * Care instructions.
 * End of life care (e.g. where to recycle).
+
+How do we make this trustworthy?
+How do we make sure the data is immutable?
+Why would companies adopt this (cough - the EU)?
+
+That's what my next startup is. 
+World Tag is a digital product passport provider.
