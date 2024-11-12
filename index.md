@@ -4,9 +4,9 @@ layout: default
 
 # Marc Beepath
 
-* I'm a postgraduate Computer Science student at the University of Liverpool and I work as a part time Software Engineer.
-* I'm building a startup and documenting it at [Marc's Fieldnotes](https://marcsfieldnotes.com). 
-* I write an email newsletter but all my writings are [archived here](/fieldnotes).
+* I'm a postgraduate Computer Science student at the University of Liverpool and I work as a part time Software Engineer. 
+* I'm building a startup and documenting it [here](https://marcsfieldnotes.com). 
+* I write an email newsletter but all my writings are archived [here](/fieldnotes).
 
 ### Some other facts:
 
