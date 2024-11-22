@@ -211,9 +211,10 @@ pre > code {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   body {
-    max-width: 50em;
+    max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 16px;
+    line-height: 1;
   }
 }
