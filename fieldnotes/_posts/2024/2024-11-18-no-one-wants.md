@@ -1,10 +1,10 @@
 ---
 layout: default
-permalink: assumptions
+permalink: noonewants
 categories: fieldnotes
 ---
 
-# What if your Startup’s assumptions are wrong?
+# What if no one wants what you're selling?
 
 ### Every Business is Built on Core Assumptions
 
@@ -15,7 +15,7 @@ Take a local grocery store, for example. Its success likely hinges on these key 
 1. People need groceries.
 2. The store is convenient and competitively priced enough to attract customers.
 
-Tech Start-ups are more of the same. 
+Tech Start-ups are more of the same.
 
 My start-up, World Tag, offers digital product passports (DPP) for clothing brands. Our business model is grounded in three core assumptions:
 
@@ -54,15 +54,9 @@ Do I think he’s entirely right? Not necessarily—my sample size is still too 
 
 ### Listen to Problems, Not Solutions
 
-Another important lesson: when you talk to potential customers, they may share ideas for other products they think are interesting (and this will happen frequently as people are generally enthused when you have taken an interest in their filed). While it’s important to listen, their solutions aren’t your focus.
+Another important lesson: when you talk to potential customers, they may share ideas for other products they think are interesting (and this will happen frequently as people are generally enthused when you have taken an interest in their field). While it’s important to listen, their solutions aren’t your focus.
 
-What matters is understanding their problems.
-
-For example:
-
-If someone suggests building a marketplace for foreign exchange trading in Trinidad, they might say, “You should create the next TTForexTrade.” What they’re really telling you is, *“It’s incredibly difficult for us to use local currency to buy anything outside of Trinidad.”*
-
-By focusing on the underlying problem, you uncover opportunities that align with your mission.
+What matters is understanding their problems. By focusing on the underlying problem, you uncover opportunities that align with your mission.
 
 ---
 
