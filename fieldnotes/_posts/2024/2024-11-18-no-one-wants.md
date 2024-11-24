@@ -6,6 +6,8 @@ categories: fieldnotes
 
 # What if no one wants what you're selling?
 
+> This blog post has a corresponding [video](https://youtu.be/-8dcmF5MGzc).
+
 ### Every Business is Built on Core Assumptions
 
 At the heart of every business lie a few foundational assumptions.
