@@ -10,14 +10,20 @@ Hopefully I don't forget to do this and leave this section perpetually blank.
 
 ```json
 {
-  "manifesto": [
-    "Embrace simplicity and minimalism.",
-    "Prioritise content and user experience over flashy design.",
-    "Keep code lean and hand-crafted.",
-    "Value privacy and user empowerment.",
-    "Champion accessibility and inclusivity.",
-    "Celebrate small projects and authentic expression.",
-    "Avoid bloat and unnecessary complexity."
-  ]
+  "about": {
+    "name": "Marc Big Shotta Beepath",
+    "born": "TT 🇹🇹",
+    "bio": "Knows recursion, also knows recursion.",
+    "languages": ["Scratch", "English"],
+    "facts": {
+      "has_side_projects": true,
+      "finishes_side_projects": false
+    },
+    "contact": {
+      "email": "marc@reeflinklabs.com",
+      "github": "github.com/marcbeep",
+      "linkedin": "linkedin.com/in/marcbeep"
+    }
+  }
 }
 ```

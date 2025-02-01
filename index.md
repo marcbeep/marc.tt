@@ -4,7 +4,7 @@ layout: default
 
 # Oh, hi Mark 👋
 
-![image](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM4NGlzbGs1aDd0NW4xdTc2MHcydHBoNzFxdzJwZzJ1YWNxdDhoYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUldzuCa0S16SkM/giphy.gif)
+![image](/assets/home.webp)
 
 I'm a postgraduate Computer Science student at the University of Liverpool, and I work as a part-time Software Engineer at a home automation company.
 Beyond that, I'm trying to build a startup, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...

@@ -21,13 +21,13 @@
 
 :root {
   font-family: "Satoshi", Helvetica, sans-serif;
-  --color-primary: #10b981; /* Tailwind emerald-500 */
-  --color-secondary: #34d399; /* Tailwind emerald-400 */
-  --color-accent: #047857; /* Tailwind emerald-700 */
-  --color-highlight-light: #ecfdf5; /* Tailwind emerald-50 */
-  --color-highlight-dark: #064e3b; /* Tailwind emerald-900 */
-  --color-light: #fff; /* Tailwind emerald-100 */
-  --color-dark: #064e3b; /* Tailwind emerald-900 */
+  --color-primary: #737373; /* Tailwind neutral-500 */
+  --color-secondary: #a3a3a3; /* Tailwind neutral-400 */
+  --color-accent: #525252; /* Tailwind neutral-700 */
+  --color-highlight-light: #f5f5f5; /* Tailwind neutral-100 */
+  --color-highlight-dark: #262626; /* Tailwind neutral-900 */
+  --color-light: #ffffff; /* Tailwind white */
+  --color-dark: #000; /* Tailwind neutral-950 */
 }
 
 @supports (font-variation-settings: normal) {
@@ -69,7 +69,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-black);
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3px;
@@ -102,7 +102,6 @@ a:active {
 #footer a {
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 400;
 }
 
 #footer a:hover,
