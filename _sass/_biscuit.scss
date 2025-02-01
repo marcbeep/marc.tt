@@ -7,18 +7,18 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Variable.woff2") format("woff2");
-  font-weight: 100 900;
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
 :root {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi", Helvetica, sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Satoshi var", sans-serif;
+    font-family: "Satoshi var", Helvetica, sans-serif;
   }
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 a {
-  color: #0000ff; /* From http://clrs.cc */
+  color: #0000ff;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:focus {
 }
 
 #footer a {
-  color: #808080; /* From http://clrs.cc */
+  color: #808080;
   text-decoration: none;
 }
 
@@ -70,7 +70,6 @@ a:focus {
 
 small {
   color: #b0b0b0;
-  text-decoration: none;
 }
 
 h1,
@@ -79,10 +78,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 1000;
+  font-family: "Satoshi", Helvetica, sans-serif;
+  font-weight: 900;
   -webkit-font-smoothing: antialiased;
-  margin: 0 0 0.5rem -0.1rem /* align left edge */;
+  margin: 0 0 0.5rem -0.1rem;
   line-height: 1;
   color: #111;
   text-rendering: optimizeLegibility;
@@ -154,8 +153,7 @@ dd {
 }
 
 blockquote {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   padding: 0.5rem 1rem;
   border-left: 0.25rem solid #ccc;
   color: #666;
@@ -221,12 +219,10 @@ pre > code {
   padding: 0 1rem;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
   body {
     max-width: 50em;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
     font-size: 16px;
   }
 }
