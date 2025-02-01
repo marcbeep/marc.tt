@@ -26,7 +26,7 @@
   --color-accent: #4338ca; /* indigo-700 */
   --color-highlight-light: #eef2ff; /* indigo-50 */
   --color-highlight-dark: #312e81; /* indigo-900 */
-  --color-light: #eef2ff; /* indigo-50 */
+  --color-light: #fff; /* white */
   --color-dark: #1e1b4b; /* indigo-950 */
 }
 
@@ -238,7 +238,7 @@ th {
 pre,
 code {
   font-family: inherit;
-  background-color: var(--color-highlight-dark);
+  background-color: var(--color-highlight-light);
 }
 
 pre {

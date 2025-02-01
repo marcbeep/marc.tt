@@ -1,7 +1,7 @@
 # Site settings
 title: Marc Beepath
-tag_text: Marc Beepath's personal website
-description: Marc Beepath's personal website, written in markdown.
+tag_text: Marc Beepath's personal website, written in markdown.
+description: Marc Beepath - Knows recursion. Also, knows recursion.
 url: "https://marcbeep.com"
 plugins:
   - jekyll-seo-tag

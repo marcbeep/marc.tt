@@ -10,7 +10,7 @@ Beyond that, I'm delving into the startup world, and I'm sharing the journey—s
 ### What I'm up to:
 
 🚀 A fintech product that makes global payments easier (heard that one before).<br/>
-✍️ An newsletter and [blog](/fieldnotes).
+✍️ A newsletter and [blog](/fieldnotes).
 
 ### Projects from the past:
 
