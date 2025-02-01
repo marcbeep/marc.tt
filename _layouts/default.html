@@ -36,11 +36,12 @@
       <nav class="breadcrumb">
         <a href="{{ site.url }}/">Home</a>
         {% if page.categories %} {% for category in page.categories %} >
-        <a href="{{ site.url }}/{{ category | slugify }}/">
-          {{ category | capitalize }}
-        </a>
-        {% endfor %} {% endif %} {% if page.title %} >
-        <span>{{ page.title }}</span>{% endif %}
+        <a href="{{ site.url }}/{{ category | slugify }}"
+          >{{ category | capitalize }}</a
+        >
+        {% endfor %} {% endif %} {% if page.permalink %} >
+        <a href="{{ site.url }}{{ page.permalink }}">{{ page.title }}</a>
+        {% endif %}
       </nav>
 
       {{ content }}
