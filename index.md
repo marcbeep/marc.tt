@@ -2,17 +2,27 @@
 layout: default
 ---
 
-# Marc Beepath
+# Hey, I'm Marc Beepath 👋
 
-* I'm a postgraduate Computer Science student at the University of Liverpool and I work as a part time Software Engineer. 
-* I'm building a startup and documenting it [here](https://marcsfieldnotes.com). 
-* I write an email newsletter but all my writings are archived [here](/fieldnotes).
+I'm a postgraduate Computer Science student at the University of Liverpool, and I work as a part-time Software Engineer at a home automation company.
+Beyond that, I'm delving into the startup world, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes).
 
-### Some other facts:
+### What I'm up to:
 
-* [2023] - My previous startup secured 1st place in a [pitching competition](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/).
-* [2020] - The Government of Trinidad & Tobago awarded me an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) in the field of Computer Science.
-* [2020] - I attained the Duke of Edinburgh Gold Award.
-* As a hobby, I used to make [short films](https://youtube.com/@Marcbeep). 
-* I love the ocean - I'm a PADI Rescue Diver. 
-* Occasionally, I enjoy playing a bit of Squash.
+- 🚀 A fintech product that makes global payments easier. (Heard that one before)
+- ✍️ An email newsletter—though you can find all my past musings [here](/fieldnotes).
+
+### Projects from the past:
+
+- 💷 [Spenny](https://github.com/marcbeep/spenny) - A Zero Based Budgeting tool.
+- 🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - An app to discover nearby, off the beaten path adventures. This won first place in a pitching competition in 2023 btw!
+
+### Other facts:
+
+- 🎓 I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.
+- 🏅 I earned the Duke of Edinburgh Gold Award in 2020.
+- 🎥 I sometimes dabbled in filmmaking—check out some of my past [short films](https://youtube.com/@Marcbeep).
+- 🌊 I love the ocean and we should protect it. I'm a certified PADI Rescue Diver.
+- 🏸 When I’m not in front of a screen, I enjoy a good game of Squash.
+
+PS. This site was written in Markdown and is intentionally simple due to my affinity to the [Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/).
