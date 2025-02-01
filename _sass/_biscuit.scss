@@ -373,3 +373,13 @@ pre > code {
   color: var(--color-secondary);
   text-decoration-color: var(--color-accent);
 }
+
+::selection {
+  background-color: var(--color-highlight-light); /* Neon green highlight */
+  color: var(--color-dark); /* Deep blue-gray text color */
+}
+
+::-moz-selection {
+  background-color: var(--color-highlight-light);
+  color: var(--color-dark);
+}
