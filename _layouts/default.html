@@ -40,7 +40,9 @@
           >{{ category | capitalize }}</a
         >
         {% endfor %} {% endif %} {% if page.permalink %} >
-        <a href="{{ site.url }}{{ page.permalink }}">{{ page.title }}</a>
+        <a href="{{ site.url }}{{ page.permalink | prepend: '/' }}"
+          >{{ page.title }}</a
+        >
         {% endif %}
       </nav>
 
