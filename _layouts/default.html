@@ -31,7 +31,22 @@
     {% include head.html %}
   </head>
   <body>
-    <div class="container">{{ content }}</div>
+    <div class="container">
+      <!-- Breadcrumb Navigation (Now Below the Title) -->
+      <nav class="breadcrumb">
+        <a href="{{ site.url }}/">Home</a>
+        {% if page.categories %} {% for category in page.categories %} >
+        <a href="{{ site.url }}/{{ category | slugify }}/">
+          {{ category | capitalize }}
+        </a>
+        {% endfor %} {% endif %} {% if page.title %} >
+        <span>{{ page.title }}</span>{% endif %}
+      </nav>
+
+      {{ content }}
+      <!-- Page Content -->
+    </div>
+
     {% include scripts.html %}
   </body>
 </html>
