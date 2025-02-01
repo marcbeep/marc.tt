@@ -21,13 +21,13 @@
 
 :root {
   font-family: "Satoshi", Helvetica, sans-serif;
-  --color-primary: #4f46e5; /* Adjusted for better contrast */
-  --color-secondary: #4338ca; /* Deepened for better readability */
-  --color-accent: #3730a3; /* Darkened for better contrast */
-  --color-highlight-light: #e0e7ff; /* Slightly darker indigo-100 for better contrast */
-  --color-highlight-dark: #1e1b4b; /* Kept dark for text readability */
-  --color-light: #ffffff; /* White remains unchanged */
-  --color-dark: #111827; /* Darkened to Tailwind's gray-900 for better contrast */
+  --color-primary: #4f46e5;
+  --color-secondary: #4338ca;
+  --color-accent: #3730a3;
+  --color-highlight-light: #e0e7ff;
+  --color-highlight-dark: #1e1b4b;
+  --color-light: #ffffff;
+  --color-dark: #111827;
 }
 
 @supports (font-variation-settings: normal) {
@@ -271,6 +271,104 @@ pre > code {
 }
 
 .breadcrumb {
-  margin-top: 10px; /* Space above breadcrumbs */
-  margin-bottom: 20px; /* Space below breadcrumbs */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* ------------------------- */
+/* NAVIGATION STYLES        */
+/* ------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.navbar-container {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  max-width: 35rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Satoshi", Helvetica, sans-serif;
+}
+
+/* Left brand link */
+.navbar-brand {
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+/* Right side menu */
+.navbar-right {
+  position: relative;
+}
+
+/* Reduce "Menu" size & make it look like other links */
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--color-light);
+  cursor: pointer;
+  font-size: 1rem; /* Reduce font size */
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition:
+    background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+}
+
+/* Hover styles match other links */
+.menu-btn:hover,
+.menu-btn:focus {
+  background-color: var(--color-highlight-light);
+  color: var(--color-secondary);
+  text-decoration-color: var(--color-accent);
+}
+
+/* Dropdown */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.5rem;
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-accent);
+  padding: 0.5rem 0;
+  min-width: 7rem;
+}
+
+/* Show dropdown */
+.show-dropdown {
+  display: block;
+}
+
+/* Dropdown links - styled like normal links */
+.menu-dropdown a {
+  display: block;
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem; /* Smaller size */
+  padding: 0.4rem 1rem;
+  white-space: nowrap;
+  transition:
+    background-color 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+}
+
+/* Hover styles */
+.menu-dropdown a:hover {
+  background-color: var(--color-highlight-dark);
+  color: var(--color-light);
 }

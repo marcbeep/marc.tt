@@ -1,62 +1,82 @@
 <!doctype html>
-<html>
-  <html lang="{{ site.lang | default: 'en' }}">
-    <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content="{{ site.description }}" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>{{ site.title }}</title>
-      <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
-      <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
-      <!-- SEO & JSON-LD Structured Data -->
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Marc Beepath",
-          "jobTitle": "Software Engineer & Startup Explorer",
-          "description": "Marc Beepath - Knows recursion, also knows recursion.",
-          "url": "https://marcbeep.com",
-          "sameAs": [
-            "https://github.com/marcbeep",
-            "https://youtube.com/@MarcsFieldnotes",
-            "https://linkedin.com/in/marcbeep"
-          ],
-          "knowsAbout": [
-            "AI",
-            "Fintech",
-            "Startups",
-            "Debugging under pressure"
-          ],
-          "award": "Once achieved 100% test coverage. Universe collapsed briefly."
-        }
-      </script>
+    <!-- SEO & JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marc Beepath",
+        "jobTitle": "Software Engineer & Startup Explorer",
+        "description": "Marc Beepath - Knows recursion, also knows recursion.",
+        "url": "https://marcbeep.com",
+        "sameAs": [
+          "https://github.com/marcbeep",
+          "https://youtube.com/@MarcsFieldnotes",
+          "https://linkedin.com/in/marcbeep"
+        ],
+        "knowsAbout": ["AI", "Fintech", "Startups", "Debugging under pressure"],
+        "award": "Once achieved 100% test coverage. Universe collapsed briefly."
+      }
+    </script>
 
-      {% include head.html %}
-    </head>
-    <body>
-      <div class="container">
-        <!-- Breadcrumb Navigation (Now Below the Title) -->
-        <nav class="breadcrumb">
-          <a href="{{ site.url }}/">Home</a>
-          {% if page.categories %} {% for category in page.categories %} >
-          <a href="{{ site.url }}/{{ category | slugify }}"
-            >{{ category | capitalize }}</a
-          >
-          {% endfor %} {% endif %} {% if page.permalink %} >
-          <a href="{{ site.url }}{{ page.permalink | prepend: '/' }}"
-            >{{ page.title }}</a
-          >
-          {% endif %}
-        </nav>
+    {% include head.html %}
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- .navbar simply centers the inner .navbar-container -->
+      <div class="navbar-container">
+        <!-- Left: Site Title -->
+        <a href="{{ site.baseurl }}/" class="navbar-brand">Marc Beepath</a>
 
-        {{ content }}
-        <!-- Page Content -->
+        <!-- Right: Menu Button & Dropdown -->
+        <div class="navbar-right">
+          <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+          <div id="menuDropdown" class="menu-dropdown">
+            <a href="/fieldnotes">Fieldnotes</a>
+            <a href="/about">About</a>
+          </div>
+        </div>
       </div>
+    </nav>
 
-      {% include scripts.html %}
-    </body>
-  </html>
+    <!-- Main Content Container -->
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb">
+        <a href="{{ site.url }}/">Home</a>
+        {% if page.categories %} {% for category in page.categories %} >
+        <a href="{{ site.url }}/{{ category | slugify }}"
+          >{{ category | capitalize }}</a
+        >
+        {% endfor %} {% endif %} {% if page.permalink %} >
+        <a href="{{ site.url }}{{ page.permalink | prepend: '/' }}"
+          >{{ page.title }}</a
+        >
+        {% endif %}
+      </nav>
+
+      <!-- Page Content -->
+      {{ content }}
+    </div>
+
+    {% include scripts.html %}
+
+    <!-- Optional JS to toggle dropdown -->
+    <script>
+      function toggleMenu() {
+        var dropdown = document.getElementById("menuDropdown");
+        dropdown.classList.toggle("show-dropdown");
+      }
+    </script>
+  </body>
 </html>
