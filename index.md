@@ -2,10 +2,12 @@
 layout: default
 ---
 
-# Hey, I'm Marc Beepath 👋
+# Oh, hi Mark 👋
+
+![image](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjM4NGlzbGs1aDd0NW4xdTc2MHcydHBoNzFxdzJwZzJ1YWNxdDhoYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUldzuCa0S16SkM/giphy.gif)
 
 I'm a postgraduate Computer Science student at the University of Liverpool, and I work as a part-time Software Engineer at a home automation company.
-Beyond that, I'm delving into the startup world, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
+Beyond that, I'm trying to build a startup, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
 
 ### What I'm up to:
 
@@ -22,8 +24,7 @@ Beyond that, I'm delving into the startup world, and I'm sharing the journey—s
 💻 I graduated from the University of Liverpool with a bachelors in Computer Science in 2023 that cost waaay too much.<br/>
 🎓 I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.<br/>
 🏅 I earned the Duke of Edinburgh Gold Award in 2020.<br/>
-🎥 I sometimes dabbled in filmmaking—check out some of my past [short films](https://youtube.com/@Marcbeep).<br/>
-🌊 I love the ocean and we should protect it (my favourite film is Finding Nemo). I'm a certified PADI Rescue Diver.<br/>
-🏸 When I’m not in front of a screen, I enjoy a good game of Squash.
+🎥 I dabbled in filmmaking—check out some of my past [short films](https://youtube.com/@Marcbeep).<br/>
+🌊 I love the ocean and we should protect it (my favourite film is Finding Nemo). I'm a certified PADI Rescue Diver and I've been trying to learn to surf (unsuccessfully).<br/>
 
 PS. This site was written in Markdown and is intentionally simple due to my affinity to the [Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/).
