@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
 :root {
   font-family: "Satoshi", Helvetica, sans-serif;
   --color-primary: #6366f1; /* indigo-500 */
@@ -89,13 +96,13 @@ a:active {
   align-items: center;
   gap: 1rem;
   padding: 2rem 0;
-  font-family: "Satoshi Black", Helvetica, sans-serif;
+  font-family: "Satoshi", Helvetica, sans-serif;
 }
 
 #footer a {
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 #footer a:hover,
