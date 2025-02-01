@@ -1,10 +1,16 @@
 # Site settings
 title: Marc Beepath
 tag_text: Marc Beepath's personal website, written in markdown.
-description: Marc Beepath's personal website, written in markdown.
+description: Marc Beepath is a Software Engineer based in the UK from Trinidad & Tobago.
 url: "https://marcbeep.com"
+lang: "en"
+author: "Marc Beepath"
+
+# SEO Plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap # Generates a sitemap.xml for search engines
+  - jekyll-feed # Creates an RSS feed for blog updates
 
 # Build settings
 markdown: kramdown

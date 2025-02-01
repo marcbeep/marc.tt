@@ -8,6 +8,25 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+    <!-- SEO & JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marc Beepath",
+        "jobTitle": "Software Engineer & Startup Explorer",
+        "description": "Marc Beepath - Knows recursion, also knows recursion.",
+        "url": "https://marcbeep.com",
+        "sameAs": [
+          "https://github.com/marcbeep",
+          "https://youtube.com/@MarcsFieldnotes"
+        ],
+        "knowsAbout": ["AI", "Fintech", "Startups", "Debugging under pressure"],
+        "award": "Once achieved 100% test coverage. Universe collapsed briefly."
+      }
+    </script>
+
     {% include head.html %}
   </head>
   <body>
