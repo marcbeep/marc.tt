@@ -21,13 +21,13 @@
 
 :root {
   font-family: "Satoshi", Helvetica, sans-serif;
-  --color-primary: #6366f1; /* indigo-500 */
-  --color-secondary: #4f46e5; /* indigo-600 */
-  --color-accent: #4338ca; /* indigo-700 */
-  --color-highlight-light: #eef2ff; /* indigo-50 */
-  --color-highlight-dark: #312e81; /* indigo-900 */
-  --color-light: #fff; /* white */
-  --color-dark: #1e1b4b; /* indigo-950 */
+  --color-primary: #4f46e5; /* Adjusted for better contrast */
+  --color-secondary: #4338ca; /* Deepened for better readability */
+  --color-accent: #3730a3; /* Darkened for better contrast */
+  --color-highlight-light: #e0e7ff; /* Slightly darker indigo-100 for better contrast */
+  --color-highlight-dark: #1e1b4b; /* Kept dark for text readability */
+  --color-light: #ffffff; /* White remains unchanged */
+  --color-dark: #111827; /* Darkened to Tailwind's gray-900 for better contrast */
 }
 
 @supports (font-variation-settings: normal) {
