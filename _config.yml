@@ -17,4 +17,3 @@ markdown: kramdown
 exclude: ["README.md"]
 sass:
   style: compressed
-permalink: pretty
