@@ -12,12 +12,12 @@ Beyond that, I'm trying to build a startup, and I'm sharing the journey—succes
 ### What I'm working on:
 
 💸 Frank - Connects to your bank account & gives you frank spending insights via Whatsapp.<br/>
-✍️ A newsletter and [blog](/fieldnotes).
+✍️ A [newsletter](https://marcbeep.substack.com) and [blog](/fieldnotes).
 
 ### Past Projects:
 
-🏷️ WorldTag - A digital product passport solution for clothing brands.
-🎣 CVFish - Tailors your CV & Cover Letter to job adverts so you can go fishing for your first job.
+🏷️ WorldTag - A digital product passport solution for clothing brands.<br />
+🎣 CVFish - Tailors your CV & Cover Letter to job adverts so you can go fishing for your first job.<br />
 💷 [Spenny](https://github.com/marcbeep/spenny) - A zero based budgeting tool to help manage your personal finances.<br/>
 🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - Helps you discover nearby, off the beaten path adventures. This won first place in a pitching competition in 2023 btw!
 
