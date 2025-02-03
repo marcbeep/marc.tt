@@ -11,7 +11,7 @@ Beyond that, I'm trying to build a startup, and I'm sharing the journey—succes
 
 ### What I'm up to:
 
-🚀 A fintech product that makes global payments easier (heard that one before).<br/>
+🚀 A tool that connects to your bank and gives you spending insights.<br/>
 ✍️ A newsletter and [blog](/fieldnotes).
 
 ### Projects from the past:
