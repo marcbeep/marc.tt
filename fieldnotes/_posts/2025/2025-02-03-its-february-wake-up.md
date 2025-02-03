@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: february
+permalink: feb
 categories: fieldnotes
 ---
 
