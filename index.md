@@ -9,15 +9,17 @@ layout: default
 I'm a postgraduate Computer Science student at the University of Liverpool, and I work as a part-time Software Engineer at a home automation company.
 Beyond that, I'm trying to build a startup, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
 
-### What I'm up to:
+### What I'm working on:
 
-🚀 A tool that connects to your bank and gives you spending insights.<br/>
+💸 Frank - Connects to your bank account & gives you frank spending insights via Whatsapp.<br/>
 ✍️ A newsletter and [blog](/fieldnotes).
 
-### Projects from the past:
+### Past Projects:
 
-💷 [Spenny](https://github.com/marcbeep/spenny) - A zero based budgeting tool to manage money.<br/>
-🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - An app to discover nearby, off the beaten path adventures. This won first place in a pitching competition in 2023 btw!
+🏷️ WorldTag - A digital product passport solution for clothing brands.
+🎣 CVFish - Tailors your CV & Cover Letter to job adverts so you can go fishing for your first job.
+💷 [Spenny](https://github.com/marcbeep/spenny) - A zero based budgeting tool to help manage your personal finances.<br/>
+🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - Helps you discover nearby, off the beaten path adventures. This won first place in a pitching competition in 2023 btw!
 
 ### Other bits:
 
