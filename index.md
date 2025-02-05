@@ -2,12 +2,13 @@
 layout: default
 ---
 
-# Oh, hi Mark 👋
+# wagwan
 
 ![image](/assets/home.png)
 
-I'm a postgraduate Computer Science student at the University of Liverpool, and I work as a part-time Software Engineer at a home automation company.
-Beyond that, I'm trying to build a startup, and I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
+I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad & Toabgo 🇹🇹 <br/>
+I work as a part-time Software Engineer at a home automation company.
+Beyond that, I'm trying to build a startup (emphasis on the trying). I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
 
 ### What I'm working on:
 
