@@ -4,7 +4,7 @@ layout: default
 
 # wagwan
 
-![image](/assets/home.png)
+![image](/assets/home.webp)
 
 I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad & Toabgo 🇹🇹 <br/>
 I work as a part-time Software Engineer at a home automation company.
