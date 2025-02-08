@@ -7,13 +7,13 @@ layout: default
 ![image](/assets/home.webp)
 
 I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad & Toabgo 🇹🇹 <br/>
-I work as a part-time Software Engineer at a home automation company.
-Beyond that, I'm trying to build a startup (emphasis on the trying). I'm sharing the journey—successes, struggles, and everything in between—over at [Marc's Fieldnotes](https://youtube.com/@MarcsFieldnotes). It's mostly struggles though...
+I work as a part-time Software Engineer at a home automation company. <br />
+Beyond that, I'm trying to build a startup (emphasis on the trying). <br />
+I'm sharing the journey—successes, struggles, and everything in between—over at [The Fieldnotes Films](/films) and [The Fieldnotes Blog](/fieldnotes). It's mostly struggles though...
 
 ## Current Projects
 
 💸 Frank - Connects to your bank account & gives you frank spending insights via Whatsapp.<br/>
-✍️ A [newsletter](https://marcbeep.substack.com) and [blog](/fieldnotes).
 
 ## Past Projects
 
@@ -27,7 +27,7 @@ Beyond that, I'm trying to build a startup (emphasis on the trying). I'm sharing
 💻 I graduated from the University of Liverpool with a bachelors in Computer Science in 2023 that cost waaay too much.<br/>
 🎓 I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.<br/>
 🏅 I earned the Duke of Edinburgh Gold Award in 2020.<br/>
-🎥 I dabbled in filmmaking—check out some of my past [short films](https://youtube.com/@Marcbeep).<br/>
+🎥 I dabbled in filmmaking—check out some of my [archived short films](https://youtube.com/@Marcbeep).<br/>
 🌊 I love the ocean and we should protect it (my favourite film is Finding Nemo). I'm a certified PADI Rescue Diver and I've been trying to learn to surf (unsuccessfully).<br/>
 
 PS. This site was written in Markdown and is intentionally simple due to my affinity to the [Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/).

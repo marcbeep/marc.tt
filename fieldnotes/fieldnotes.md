@@ -3,7 +3,7 @@ layout: default
 permalink: fieldnotes
 ---
 
-# Marc's Fieldnotes 📕
+# The Fieldnotes Blog 📕
 
 These ideas slow cook and develop over time.
 My opinions change often and these notes are frequently updated.
