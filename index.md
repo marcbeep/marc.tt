@@ -6,10 +6,10 @@ layout: default
 
 ![image](/assets/home.webp)
 
-I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad & Toabgo 🇹🇹 <br/>
-I work as a part-time Software Engineer at a home automation company. <br />
-Beyond that, I'm trying to build a startup (emphasis on the trying). <br /><br />
-I'm sharing the journey—successes, struggles, and everything in between—over at [The Fieldnotes Films](/films) and [The Fieldnotes Writings](/writings). You can also signup to [The Fieldnotes Newsletter](https://marcbeep.substack.com).
+I'm a postgrad CS student at the Uni of Liverpool from the Caribbean 🇹🇹 and work as a part-time Software Engineer.<br /><br />
+
+When I'm not making computers say Hello World, I'm trying to build a startup (emphasis on the trying). <br />
+I'm share my thoughts over at [The Fieldnotes Films](/films) and [The Fieldnotes Writings](/writings). You can also signup to [The Fieldnotes Newsletter](https://marcbeep.substack.com).
 
 ## Current Projects
 
@@ -24,8 +24,8 @@ I'm sharing the journey—successes, struggles, and everything in between—over
 
 ## Other bits
 
-💻 I graduated from the University of Liverpool with a bachelors in Computer Science in 2023 that cost waaay too much.<br/>
-🎓 I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.<br/>
+🎓 I graduated from the University of Liverpool with a bachelors in Computer Science in 2023 that cost waaay too much.<br/>
+💻 I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.<br/>
 🏅 I earned the Duke of Edinburgh Gold Award in 2020.<br/>
 🎥 I dabbled in filmmaking—check out some of my [archived short films](https://youtube.com/@Marcbeep).<br/>
 🌊 I love the ocean and we should protect it (my favourite film is Finding Nemo). I'm a certified PADI Rescue Diver and I've been trying to learn to surf (unsuccessfully).<br/>
