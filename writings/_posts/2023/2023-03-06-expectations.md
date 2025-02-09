@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: expectations
-categories: fieldnotes
+categories: writings
 ---
 
 # Letting go of expectations

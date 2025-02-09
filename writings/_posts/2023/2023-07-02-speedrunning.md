@@ -1,10 +1,10 @@
 ---
 layout: default
 permalink: speedrunning
-categories: fieldnotes
+categories: writings
 ---
 
-# Speed running in your 20s
+# Speedrunning in your 20s
 
 ![speedrunning-cover](/assets/covers/speedrunning.png)
 
