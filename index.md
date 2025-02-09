@@ -8,7 +8,7 @@ layout: default
 
 I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad & Toabgo 🇹🇹 <br/>
 I work as a part-time Software Engineer at a home automation company. <br />
-Beyond that, I'm trying to build a startup (emphasis on the trying). <br />
+Beyond that, I'm trying to build a startup (emphasis on the trying). <br /><br />
 I'm sharing the journey—successes, struggles, and everything in between—over at [The Fieldnotes Films](/films) and [The Fieldnotes Blog](/fieldnotes). It's mostly struggles though...
 
 ## Current Projects
