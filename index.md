@@ -13,13 +13,13 @@ I'm share my thoughts over at [The Fieldnotes Films](/films) and [The Fieldnotes
 
 ## Current Projects
 
-💸 Frank - Connects to your bank account & gives you frank spending insights via Whatsapp.<br/>
+🪙 [Spenny (v2)](https://spenny.marcbeep.com) - A revamp of the original Spenny to be a personal finance hub.<br/>
 
 ## Past Projects
 
-🏷️ WorldTag - A digital product passport solution for clothing brands.<br />
-🎣 CVFish - Tailors your CV & Cover Letter to job adverts so you can go fishing for your first job.<br />
-💷 [Spenny](https://github.com/marcbeep/spenny) - A zero based budgeting tool to help manage your personal finances.<br/>
+🏷️ [WorldTag](https://worldtag.co.uk) - A digital product passport solution for clothing brands.<br />
+🎣 CVFish (No Longer Deployed) - Tailors your CV & Cover Letter to job adverts so you can go fishing for your first job.<br />
+💷 [Spenny (v1)](https://github.com/marcbeep/spenny) - A zero based budgeting tool to help manage your personal finances.<br/>
 🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - Helps you discover nearby, off the beaten path adventures. This won first place in a pitching competition in 2023 btw!
 
 ## Other bits
