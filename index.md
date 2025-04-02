@@ -13,7 +13,7 @@ I'm share my thoughts over at [The Fieldnotes Films](/films) and [The Fieldnotes
 
 ## Current Projects
 
-🪙 [Spenny (v2)](https://spenny.marcbeep.com) - A revamp of the original Spenny to be a personal finance hub.<br/>
+🪙 [Spenny (v2)] - A revamp of the original Spenny to be a personal finance hub.<br/>
 
 ## Past Projects
 
