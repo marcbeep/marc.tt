@@ -48,9 +48,13 @@ People often raise the same objections to investing:
 
 I’m not qualified to give financial advice—nor do I want to—but I do encourage my friends to start thinking about their savings.
 
-You should know: **you _can_ lose money.**  
+You should know: **the value of your investments _can_ go DOWN.**  
 My portfolio is currently in the red.  
 I won’t share any more details with the internet.
+
+But it has been many times.
+And its also been green to the moon.
+And it will cyclically be green and red forever.
 
 How does it feel?  
 Scary.  
