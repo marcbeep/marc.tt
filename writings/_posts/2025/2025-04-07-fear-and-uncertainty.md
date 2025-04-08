@@ -64,9 +64,9 @@ I’m not qualified to give financial advice, nor do I care to.
 But I do encourage my friends to start thinking about their savings.
 People often raise the same objections to investing:
 
-1. "The market is bad right now, I'll wait." - No one, not even Warren Buffett, knows where the market will go. Think long term.
-2. “I don’t have enough money to invest.” - This usually stems from the hefty account minimums that once existed in traditional investing. Nowadays, many brokers allow fractional shares, even as low as £1 or $1. The habit of consistent investing is more important than the amount. Personal finance books will tell you to "Pay Yourself First". That is, set aside some money for investing/saving first, before allocating to things like your rent/groceries etc. It should be as a percentage of your income that allows you to sleep well at night.
-3. “I don’t know enough about it.” - This objection disproportionately comes from my friends that are girls. My guess is that investing has not traditionally been seen as very "feminine". In my opinion, I view financial independence of a woman as a core principle of feminism.
+1. **"The market is bad right now, I'll wait."** - No one, not even Warren Buffett, knows where the market will go. Think long term.
+2. **“I don’t have enough money to invest.”** - This idea usually stems from the hefty account minimums that once existed in traditional investing. Nowadays, many brokers allow fractional shares, even as low as £1 or $1. The habit of consistent investing is more important than the amount. Personal finance books will tell you to "Pay Yourself First". That is, set aside some money for investing/saving first, before allocating to things like your rent/groceries etc.
+3. **“I don’t know enough about it.”** - This objection disproportionately comes from my friends that are girls. My guess is that investing has not traditionally been seen as very "feminine". In my opinion, I view financial independence of a woman as a core principle of feminism.
 
 I do, however, believe people should consider their own circumstances and invest what they can.
 This is why I will not disclose any personal details here to avoid any comparison.
