@@ -1,5 +1,5 @@
 .hll {
-  background-color: rgba(68, 71, 90, 0.5);
+  background-color: #e2e2e5;
 }
 
 /* Comments */
@@ -7,13 +7,15 @@
 .cm,
 .c1,
 .cs {
-  color: #bd93f9;
+  color: #757575;
 }
 
 /* Error */
-.err {
-  color: #ff5555;
-  background-color: rgba(255, 85, 85, 0.2);
+.err,
+.ne,
+.gr {
+  color: #b00020;
+  background-color: rgba(176, 0, 32, 0.1);
 }
 
 /* Keywords */
@@ -23,14 +25,19 @@
 .kn,
 .kp,
 .kr,
-.kt {
-  color: #ff79c6;
+.kt,
+.gh {
+  color: #a926a9;
 }
 
 /* Operators */
 .o,
-.ow {
-  color: #8be9fd;
+.ow,
+.bp,
+.css .o,
+.css .o + .nt,
+.css .nt + .nt {
+  color: #005cc5;
 }
 
 /* Numbers */
@@ -40,7 +47,7 @@
 .mi,
 .mo,
 .il {
-  color: #ffb86c;
+  color: #d17a00;
 }
 
 /* Strings */
@@ -54,43 +61,38 @@
 .si,
 .sx,
 .s1,
-.ss {
-  color: #50fa7b;
+.ss,
+.gt {
+  color: #008000;
 }
 
-/* Name.Attribute and Builtins */
+/* Attributes and Builtins */
 .na,
-.nb {
-  color: #8be9fd;
+.nb,
+.nf,
+.nl,
+.nn,
+.gu,
+.gp {
+  color: #005cc5;
 }
 
 /* Classes, Constants, Decorators */
 .nc,
 .no,
 .nd {
-  color: #bd93f9;
-}
-
-/* Entities */
-.ni {
-  color: #f8f8f2;
+  color: #2b91af;
 }
 
 /* Exceptions */
+.err,
 .ne {
-  color: #ff5555;
-}
-
-/* Functions, Labels, Namespaces */
-.nf,
-.nl,
-.nn {
-  color: #8be9fd;
+  color: #b00020;
 }
 
 /* Tags */
 .nt {
-  color: #ff79c6;
+  color: #b30086;
 }
 
 /* Variables */
@@ -98,57 +100,40 @@
 .vc,
 .vg,
 .vi {
-  color: #f8f8f2;
+  color: #44475a;
 }
 
 /* Whitespace */
 .w {
-  color: #f8f8f2;
+  color: #44475a;
 }
 
-/* Builtin Pseudo */
-.bp {
-  color: #8be9fd;
-}
-
-/* Generic Subheading */
-.gu {
-  color: #8be9fd;
-}
-
-/* Generic Traceback */
-.gt {
-  color: #50fa7b;
-}
-
-/* Generic Emphasis (italic) */
+/* Emphasis */
 .ge {
   font-style: italic;
 }
 
-/* Generic Error */
-.gr {
-  color: #ff5555;
-}
-
-/* Generic Heading */
-.gh {
-  color: #ff79c6;
-}
-
 /* Generic Inserted */
 .gi {
-  color: #50fa7b;
+  color: #008000;
 }
 
-/* Generic Prompt */
-.gp {
-  color: #8be9fd;
+/* Background for code blocks */
+code,
+pre {
+  background-color: #f4f4f4;
 }
 
-/* Additional CSS for CSS files */
-.css .o,
-.css .o + .nt,
-.css .nt + .nt {
-  color: #8be9fd;
+/* Pre block styling */
+pre {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-family: monospace;
+  overflow: auto;
+}
+
+/* Inline code */
+code {
+  padding: 0.15rem 0.4rem;
+  font-family: monospace;
 }
