@@ -2,6 +2,7 @@
 layout: default
 permalink: expectations
 categories: writings
+description: Gracefully accept life.
 ---
 
 # Letting go of expectations

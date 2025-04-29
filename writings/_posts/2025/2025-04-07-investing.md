@@ -2,6 +2,7 @@
 layout: default
 permalink: investing
 categories: writings
+description: Thoughts on investing.
 ---
 
 # Fear & Uncertainty

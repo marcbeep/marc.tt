@@ -2,6 +2,7 @@
 layout: default
 permalink: perfectionism
 categories: writings
+description: Things don't have to be perfect.
 ---
 
 # Perfectionism is a lazy excuse for fear

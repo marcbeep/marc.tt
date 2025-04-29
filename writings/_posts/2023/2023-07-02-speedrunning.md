@@ -2,6 +2,7 @@
 layout: default
 permalink: speedrunning
 categories: writings
+description: Chill out.
 ---
 
 # Speedrunning in your 20s
