@@ -3,9 +3,9 @@ layout: default
 permalink: writings
 ---
 
-# The Fieldnotes Writings ✍🏽
+# Marc's Writings ✍🏽
 
-> See also: [The Fieldnotes Films](/films) and [The Fieldnotes Newsletter](https://marcbeep.substack.com)
+> See also: [Marc's Films](/films) and [Marc's Newsletter](https://marcbeep.substack.com)
 
 <br/>
 

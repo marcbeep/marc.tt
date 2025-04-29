@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# The Fieldnotes Films 🎥
+# Marc's Films 🎥
 
-> See also: [The Fieldnotes Writings](/writings) and [The Fieldnotes Newsletter](https://marcbeep.substack.com)
+> See also: [Marc's Writings](/writings) and [Marc's Newsletter](https://marcbeep.substack.com)
 
 <!-- Inline CSS for Featured Videos -->
 <style>
