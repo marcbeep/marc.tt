@@ -1,5 +1,8 @@
 ---
 layout: default
+permalink: films
+description: A collection of Marc Beepath's films.
+
 ---
 
 # Marc's Films 🎥
