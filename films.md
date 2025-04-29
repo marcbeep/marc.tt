@@ -7,12 +7,12 @@ description: A collection of Marc Beepath's films.
 
 # Marc's Films 🎥
 
-> See also: [Marc's Writings](/writings) and [Marc's Newsletter](https://marcbeep.substack.com)
+These are just a couple of my films. See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
 
 <!-- Inline CSS for Featured Videos -->
 <style>
   .video-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     text-align: left;
     padding: 20px;
@@ -24,28 +24,50 @@ description: A collection of Marc Beepath's films.
   .video-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Left-align items */
+    align-items: flex-start;
   }
   .video-item a {
     color: inherit;
     display: block;
     width: 100%;
+    text-decoration: none;
   }
   .video-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 5px;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #e0e0e0;
   }
-  .video-item p {
+  .video-item a:hover img {
+    transform: scale(1.02);
+    border-color: #b0b0b0;
+  }
+  .video-item h3 {
     font-size: 1.5em;
     margin: 5px 0;
     width: 100%;
   }
-  /* Hide images on large screens */
+  .video-item small {
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  /* Grid layout for larger screens */
   @media (min-width: 768px) {
+    #featured-videos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    .video-section {
+      margin-bottom: 0;
+    }
     .video-item img {
-      display: none;
+      display: block;
+      aspect-ratio: 16/9;
+      object-fit: cover;
     }
   }
 </style>
@@ -79,8 +101,11 @@ description: A collection of Marc Beepath's films.
     if (!video) return "";
     const videoId = video.id;
     const title = video.snippet.title;
-    // Use optional chaining in case the thumbnail is missing.
-    const thumbnail = video.snippet.thumbnails.medium?.url || "";
+    // Try to get the highest quality thumbnail available
+    const thumbnail = video.snippet.thumbnails.maxres?.url || 
+                     video.snippet.thumbnails.high?.url || 
+                     video.snippet.thumbnails.medium?.url || 
+                     video.snippet.thumbnails.default?.url || "";
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
     return `
       <a href="${videoUrl}" target="_blank">

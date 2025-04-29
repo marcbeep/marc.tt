@@ -6,11 +6,8 @@ description: A collection of Marc Beepath's writings, thoughts, and insights on 
 
 # Marc's Writings ✍🏽
 
-> See also: [Marc's Films](/films) and [Marc's Newsletter](https://marcbeep.substack.com)
-
-<br/>
+Here's a collection of my written thoughts.
 
 {% for post in site.categories.writings %}
-
-  <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
