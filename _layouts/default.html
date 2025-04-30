@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="{{ page.description | default: site.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}" />
+    <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
+    <meta property="og:type" content="{{ page.og_type | default: 'website' }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% if page.og_image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/og-default.jpg" />
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.title }}" />
+    
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
