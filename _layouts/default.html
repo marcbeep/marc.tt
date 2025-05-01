@@ -38,6 +38,10 @@
     <title>{{ page.title | default: site.title }} | {{ site.tag_text }}</title>
     <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
 
     <!-- SEO & JSON-LD -->
     <script type="application/ld+json">
@@ -45,7 +49,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Marc Beepath",
-        "jobTitle": "Software Engineer & Startup Explorer",
+        "jobTitle": "Software Engineer",
         "description": "Marc Beepath - Knows recursion, also knows recursion.",
         "url": "https://marcbeep.com",
         "sameAs": [
@@ -63,7 +67,7 @@
         "location": {
           "@type": "Place",
           "address": {
-            "@type": "PostalAddress",
+            "@type": "Liverpool",
             "addressCountry": "GB"
           }
         },
@@ -82,7 +86,7 @@
             "@type": "EducationalCredential",
             "credentialCategory": "degree",
             "educationalLevel": "Master's Degree",
-            "name": "Computer Science"
+            "name": "Advanced Computer Science"
           }
         ]
       }
