@@ -19,8 +19,23 @@
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:logo" content="{{ site.url }}/assets/home.webp" />
     
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page.og_title | default: page.title | default: site.title }}" />
+    <meta name="twitter:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
+    {% if page.og_image %}
+    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}" />
+    {% else %}
+    <meta name="twitter:image" content="{{ site.url }}/assets/og-default.jpg" />
+    {% endif %}
+    
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="keywords" content="{{ page.keywords | default: 'software engineering, AI, fintech, startups, technology, personal blog' }}" />
+    <meta name="robots" content="index, follow" />
+    
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <title>{{ site.title }}</title>
+    <title>{{ page.title | default: site.title }} | {{ site.tag_text }}</title>
     <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
@@ -39,7 +54,37 @@
           "https://linkedin.com/in/marcbeep"
         ],
         "knowsAbout": ["AI", "Fintech", "Startups", "Debugging under pressure"],
-        "award": "Once achieved 100% test coverage. Universe collapsed briefly."
+        "award": "Once achieved 100% test coverage. Universe collapsed briefly.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Liverpool",
+          "url": "https://www.liverpool.ac.uk"
+        },
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB"
+          }
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Trinidad and Tobago"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Bachelor's Degree",
+            "name": "Computer Science"
+          },
+          {
+            "@type": "EducationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Master's Degree",
+            "name": "Computer Science"
+          }
+        ]
       }
     </script>
 

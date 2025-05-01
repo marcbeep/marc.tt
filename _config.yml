@@ -5,6 +5,10 @@ description: Marc Beepath is a Software Engineer based in the UK from Trinidad &
 url: "https://marcbeep.com"
 lang: "en"
 author: "Marc Beepath"
+email: "marcbeep@gmail.com"
+github: "marcbeep"
+linkedin: "marcbeep"
+youtube: "@MarcsFieldnotes"
 
 # SEO Plugins
 plugins:
@@ -17,3 +21,16 @@ markdown: kramdown
 exclude: ["README.md"]
 sass:
   style: compressed
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Marc Beepath"
+      comments: false
+      share: true
+      keywords: "software engineering, AI, fintech, startups, technology, personal blog"
