@@ -134,13 +134,6 @@
     </div>
 
     {% include scripts.html %}
-
-    <!-- Optional JS to toggle dropdown -->
-    <script>
-      function toggleMenu() {
-        var dropdown = document.getElementById("menuDropdown");
-        dropdown.classList.toggle("show-dropdown");
-      }
-    </script>
+    <script src="{{ '/assets/js/menu.js' | absolute_url }}"></script>
   </body>
 </html>
