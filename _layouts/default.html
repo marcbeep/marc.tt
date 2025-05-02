@@ -93,8 +93,6 @@
         ]
       }
     </script>
-
-    {% include head.html %}
   </head>
   <body>
     <!-- NAVBAR -->
@@ -120,11 +118,11 @@
       <!-- Breadcrumb Navigation -->
       <nav class="breadcrumb">
         <a href="{{ site.url }}/">Home</a>
-        {% if page.categories %} {% for category in page.categories %} >
+        {% if page.categories %} {% for category in page.categories %}
         <a href="{{ site.url }}/{{ category | slugify }}"
           >{{ category | capitalize }}</a
         >
-        {% endfor %} {% endif %} {% if page.permalink %} >
+        {% endfor %} {% endif %} {% if page.permalink %}
         <a href="{{ site.url }}{{ page.permalink | prepend: '/' }}"
           >{{ page.title }}</a
         >
