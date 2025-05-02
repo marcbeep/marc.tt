@@ -257,7 +257,7 @@ pre > code {
 .container {
   max-width: 35rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 5.5rem 1.5rem 0 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -281,20 +281,34 @@ pre > code {
 .navbar {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .navbar-container {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  max-width: 35rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Satoshi", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .navbar-container {
+    max-width: 35rem;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 /* Left brand link */
