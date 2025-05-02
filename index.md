@@ -8,17 +8,7 @@ I'm a postgrad CS student at the Uni of Liverpool from the Caribbean 🇹🇹 an
 
 When I'm not making computers say Hello World, I make short [films](/films) and [write](/writings).
 
-## Projects
-
-🪙 Dime- Currently working on a personal finance hub.<br/>
-
-🏷️ [WorldTag](https://worldtag.co.uk) - A digital product passport solution for clothing brands.<br />
-
-🎣 CVFish (No Longer Deployed) - Helps students get their first jobs.<br />
-
-💷 [Spenny](https://github.com/marcbeep/spenny) - A zero based budgeting tool.<br/>
-
-🗺️ [Wildroutes](https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/) - Helps you discover nearby, off the beaten path adventures. This won first place in a competition in 2023!
+Check out my [projects](/projects) to see what I've been working on.
 
 ## Other bits
 

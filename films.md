@@ -7,7 +7,8 @@ description: A collection of Marc Beepath's films.
 
 # Films
 
-These are just a couple of my films. See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
+Making films is a massive hobby of mine. 
+See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
 
 <!-- Inline CSS for Featured Videos -->
 <style>
