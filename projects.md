@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Projects
+permalink: projects
+description: A collection of Marc Beepath's projects.
 ---
 
 # Projects
