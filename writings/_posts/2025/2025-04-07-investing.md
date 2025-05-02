@@ -2,7 +2,7 @@
 layout: default
 permalink: investing
 categories: writings
-description: Thoughts on investing.
+description: This essay is about tariffs and investing.
 ---
 
 # Fear & Uncertainty
