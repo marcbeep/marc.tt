@@ -28,6 +28,7 @@
   --color-highlight-dark: #44475a; /* Dark gray-blue to ground the palette */
   --color-light: #f8f8f2; /* Off-white for a warm, aged look */
   --color-dark: #282a36; /* Deep blue-gray for dramatic contrast */
+  --color-quote-bg: #f2f2f2; /* Soft grey for blockquote background */
 }
 
 @supports (font-variation-settings: normal) {
@@ -195,9 +196,13 @@ dd {
 
 blockquote {
   margin: 0;
-  padding: 0.75rem 1.5rem;
-  border-left: 0.25rem solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  background: #e5e5ea;
+  border-radius: 0.5rem;
   color: var(--color-dark);
+  border-left: none;
+  font-weight: 700;
 }
 
 blockquote p:last-child {
@@ -224,14 +229,44 @@ hr {
 
 table {
   width: 100%;
-  border: 1px solid var(--color-accent);
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(44,62,80,0.07);
+  background: #fff;
+  margin-bottom: 2rem;
 }
 
-td,
+th, td {
+  padding: 1.1rem 1.2rem;
+  border: none;
+}
+
 th {
-  padding: 0.4rem 0.75rem;
-  border: 1px solid var(--color-accent);
+  background: #f5f6fa;
+  color: var(--color-dark);
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+tr {
+  border-bottom: 1px solid #e5e5ea;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+td {
+  color: var(--color-dark);
+  vertical-align: top;
 }
 
 pre,
