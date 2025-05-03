@@ -584,38 +584,14 @@ pre > code {
   background: var(--color-highlight-light);
   border-radius: 8px;
   transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+  color: var(--color-dark);
+  display: block;
   
   &:hover {
     transform: translateY(-2px);
     background: var(--color-highlight-dark);
-  }
-
-  /* Add pointer cursor if the item contains a link */
-  &:has(a) {
-    cursor: pointer;
-  }
-  
-  a {
-    text-decoration: none;
     color: var(--color-dark);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    
-    &:hover {
-      color: var(--color-accent);
-    }
-
-    &::after {
-      content: "↗";
-      font-size: 0.9em;
-      opacity: 0.7;
-      transition: opacity 0.2s ease;
-    }
-
-    &:hover::after {
-      opacity: 1;
-    }
   }
   
   .project-emoji {
@@ -626,5 +602,22 @@ pre > code {
   .project-description {
     margin-top: 0.5rem;
     color: var(--color-secondary);
+  }
+
+  strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    &::after {
+      content: "↗";
+      font-size: 0.9em;
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+  }
+
+  &:hover strong::after {
+    opacity: 1;
   }
 }
