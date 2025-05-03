@@ -392,7 +392,9 @@ pre > code {
 .breadcrumb {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-family: monospace;
+  font-weight: 600;
   color: var(--color-secondary);
   display: flex;
   flex-wrap: wrap;
@@ -416,7 +418,7 @@ pre > code {
     content: "/";
     margin-left: 0.75rem;
     color: var(--color-highlight-dark);
-    font-weight: 300;
+    font-weight: 400;
     opacity: 0.6;
     font-size: 1.1rem;
     position: relative;
@@ -426,7 +428,7 @@ pre > code {
   /* Add subtle hover effect for the current page */
   > a:last-child {
     color: var(--color-dark);
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
