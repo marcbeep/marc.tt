@@ -117,6 +117,7 @@
     <!-- Main Content Container -->
     <div class="container">
       <!-- Breadcrumb Navigation -->
+      {% unless page.url == "/" or page.url == "/index.html" %}
       <nav class="breadcrumb">
         <a href="{{ site.url }}/">Home</a>
         {% if page.categories %} {% for category in page.categories %}
@@ -129,6 +130,7 @@
         >
         {% endif %}
       </nav>
+      {% endunless %}
 
       <!-- Page Content -->
       {{ content }}
