@@ -304,6 +304,16 @@ hr {
   display: block;
 }
 
+figcaption {
+  text-align: left;
+  font-size: 0.7rem;
+  color: var(--color-secondary);
+  margin-top: 0.5rem;
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

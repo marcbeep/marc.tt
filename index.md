@@ -11,6 +11,11 @@ Check out my [projects](/projects) to see what I've been working on.
 
 When I'm not making computers say Hello World, I make short [films](/films) and [write](/writings).
 
+<figure>
+  <img src="assets/home.webp" alt="Me & a penguin in Lisbon">
+  <figcaption>Me & a penguin in Lisbon. What a crossover</figcaption>
+</figure>
+
 ## Other bits
 
 - I graduated from the University of Liverpool with a BSc in Computer Science in 2023 that cost way too much.
