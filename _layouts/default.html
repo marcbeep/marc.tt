@@ -11,8 +11,8 @@
     <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
     <meta property="og:type" content="{{ page.og_type | default: 'website' }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    {% if page.og_image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
     <meta property="og:image" content="{{ site.url }}/assets/og-default.jpg" />
     {% endif %}
@@ -23,8 +23,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ page.og_title | default: page.title | default: site.title }}" />
     <meta name="twitter:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
-    {% if page.og_image %}
-    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}" />
+    {% if page.image %}
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
     <meta name="twitter:image" content="{{ site.url }}/assets/og-default.jpg" />
     {% endif %}
@@ -135,6 +135,11 @@
       {% endunless %}
 
       <!-- Page Content -->
+      {% if page.image %}
+      <div class="post-banner">
+        <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" class="post-banner-image">
+      </div>
+      {% endif %}
       {{ content }}
     </div>
 
