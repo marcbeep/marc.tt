@@ -3,6 +3,7 @@ layout: default
 permalink: investing
 categories: writings
 description: This essay is about tariffs and investing.
+image: /assets/writings/2025/investing.webp
 ---
 
 # Fear & Uncertainty

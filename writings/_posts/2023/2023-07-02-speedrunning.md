@@ -3,7 +3,7 @@ layout: default
 permalink: speedrunning
 categories: writings
 description: Chill out.
-image: /assets/covers/speedrunning.png
+image: /assets/writings/2023/speedrunning.webp
 ---
 
 # Speedrunning in your 20s

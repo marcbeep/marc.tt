@@ -14,10 +14,10 @@
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
-    <meta property="og:image" content="{{ site.url }}/assets/og-default.jpg" />
+    <meta property="og:image" content="{{ site.url }}/assets/imgs/og-default.jpg" />
     {% endif %}
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:logo" content="{{ site.url }}/assets/logo.webp" />
+    <meta property="og:logo" content="{{ site.url }}/assets/imgs/logo.webp" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -26,7 +26,7 @@
     {% if page.image %}
     <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
-    <meta name="twitter:image" content="{{ site.url }}/assets/og-default.jpg" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/imgs/og-default.jpg" />
     {% endif %}
     
     <!-- Additional Meta Tags -->
@@ -39,11 +39,11 @@
     <link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}" />
     
     <!-- Favicons -->
-    <link rel="icon" href="{{ '/assets/favicon.ico' | absolute_url }}" type="image/x-icon" />
-    <link rel="icon" href="{{ '/assets/favicon.svg' | absolute_url }}" type="image/svg+xml" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | absolute_url }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicon-96x96.png' | absolute_url }}">
-    <link rel="manifest" href="{{ '/assets/site.webmanifest' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/favicons/favicon.ico' | absolute_url }}" type="image/x-icon" />
+    <link rel="icon" href="{{ '/assets/favicons/favicon.svg' | absolute_url }}" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicons/favicon-96x96.png' | absolute_url }}">
+    <link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | absolute_url }}">
 
     <!-- SEO & JSON-LD -->
     <script type="application/ld+json">
@@ -101,7 +101,7 @@
       <div class="navbar-container">
         <!-- Left: Site Title -->
         <a href="{{ site.baseurl }}/" class="navbar-brand">
-          <img src="{{ '/assets/navbar-logo.webp' | absolute_url }}" alt="Marc Beepath" height="30" width="auto">
+          <img src="{{ '/assets/imgs/navbar-logo.webp' | absolute_url }}" alt="Marc Beepath" height="30" width="auto">
         </a>
 
         <!-- Right: Menu Button & Dropdown -->
