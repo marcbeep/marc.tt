@@ -4,10 +4,15 @@ permalink: wildroutes
 categories: projects
 title: "Wildroutes"
 description: "Helps you discover nearby, off the beaten path adventures."
-visit: "https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/"
+visit: null
 github: null
 release_date: 2023-05-10
 emoji: "🗺️"
+external_links:
+  - label: "Press Coverage"
+    url: "https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/"
+  - label: "More Press"
+    url: "https://www.liverpool.ac.uk/careers/students/blog/enterprise/livunienterprisemarcsstory/"
 ---
 
 <div class="video-container">
