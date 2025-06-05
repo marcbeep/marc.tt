@@ -81,12 +81,53 @@ document.addEventListener('DOMContentLoaded', function() {
   <figcaption>Me & a penguin in Lisbon. What a crossover</figcaption>
 </figure>
 
-## Other bits
+## Some achievements of mine
 
-- I graduated from the University of Liverpool with a BSc in Computer Science in 2023 that cost way too much.
-- I was awarded an additional [scholarship](https://napcol.bluechiptt.com/scholarships-2020/) from the Government of Trinidad & Tobago for my results in Computer Science in 2020.
-- I earned the Duke of Edinburgh Gold Award in 2020.
-- Check out some of my [archived short films](https://youtube.com/@Marcbeep).
-- I love the ocean. We should protect it (my favourite film is Finding Nemo). I'm a certified PADI Rescue Diver and I've been learning to surf recently.
+<div class="achievements-timeline">
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-briefcase"></i></span><span class="timeline-date">SEP 2024</span></span>
+    <div class="timeline-content">Began working as a Software Engineer with the folks at <a href="https://ultamation.com">Ultamation</a> in the Liverpool Science Park whilst doing my Masters</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-graduation-cap"></i></span><span class="timeline-date">SEP 2024</span></span>
+    <div class="timeline-content">Started my MSc in Advanced Computer Science</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-certificate"></i></span><span class="timeline-date">JUN 2024</span></span>
+    <div class="timeline-content">Graduated from the University of Liverpool with a BSc in Computer Science</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-briefcase"></i></span><span class="timeline-date">JUN 2023</span></span>
+    <div class="timeline-content">Interned as a Software Engineer for the summer at <a href="https://octopus.energy">Octopus Energy</a> in Manchester</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-trophy"></i></span><span class="timeline-date">MAY 2023</span></span>
+    <div class="timeline-content"><a href="/wildroutes">Wildroutes</a> won first place at the Design Your Future Startup Pitching Competition</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-people-group"></i></span><span class="timeline-date">SEP 2022</span></span>
+    <div class="timeline-content">Began working as a Careers Coach at the University of Liverpool, whilst studying for my Bachelors</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-leaf"></i></span><span class="timeline-date">JUN 2022</span></span>
+    <div class="timeline-content">Spent the summer interning at <a href="https://voicefornature.com">Voice for Nature</a></div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-award"></i></span><span class="timeline-date">JUN 2020</span></span>
+    <div class="timeline-content">Awarded a <a href="https://napcol.bluechiptt.com/scholarships-2020/">national scholarship</a> from the Government of Trinidad & Tobago for excellence in Computer Science</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-film"></i></span><span class="timeline-date">SEP 2021</span></span>
+    <div class="timeline-content"><a href="https://www.youtube.com/watch?v=q3DFanw9s40">Wrecked</a> is officially selected for the T&T Film Festival</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-medal"></i></span><span class="timeline-date">MAY 2020</span></span>
+    <div class="timeline-content">Earned the Duke of Edinburgh Gold Award and met the President of Trinidad and Tobago</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-water"></i></span><span class="timeline-date">DEC 2019</span></span>
+    <div class="timeline-content">Became a certified PADI Rescue Diver</div>
+  </div>
+</div>
 
 > PS. This site was written in Markdown and is intentionally simple due to my affinity to the [Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/).

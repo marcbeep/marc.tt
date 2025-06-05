@@ -895,3 +895,93 @@ pre > code {
     font-size: 0.8rem;
   }
 }
+
+/* Timeline Styles */
+.achievements-timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-accent);
+    opacity: 0.3;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:hover {
+      transform: translateX(5px);
+    }
+
+    .timeline-date-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.25rem;
+      gap: 0.5rem;
+    }
+
+    .timeline-icon {
+      font-size: 1.25rem;
+      color: var(--color-accent);
+      background: none;
+      border: none;
+      width: auto;
+      height: auto;
+      min-width: 0;
+      min-height: 0;
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: none;
+    }
+
+    .timeline-date {
+      font-family: "Satoshi", monospace;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.02em;
+    }
+
+    .timeline-content {
+      color: var(--color-dark);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+
+      a {
+        color: var(--color-dark);
+        text-decoration: none;
+        border-bottom: 2px solid var(--color-accent);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--color-accent);
+          background: var(--color-highlight-light);
+        }
+      }
+    }
+    
+    /* Stack date/content vertically next to icon */
+    > .timeline-date, > .timeline-content {
+      display: block;
+    }
+    > div {
+      flex: 1 1 auto;
+    }
+    flex-wrap: wrap;
+  }
+}
