@@ -19,7 +19,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     <a href="{{ latest_project.url }}" class="activity-card">
       <div class="activity-label">Latest Project</div>
       <div class="activity-title">{{ latest_project.title }}</div>
-      <div class="activity-date">{% if latest_project.release_date %}{{ latest_project.release_date | date: "%B %Y" }}{% else %}{{ latest_project.released }}{% endif %}</div>
+      <div class="activity-date">{% if latest_project.date %}{{ latest_project.date | date: "%B %Y" }}{% else %}{{ latest_project.released }}{% endif %}</div>
     </a>
     {% endif %}
 
