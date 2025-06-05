@@ -28,4 +28,31 @@ layout: default
   <div class="writing-content">
     {{ content }}
   </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-navigation">
+    <div class="nav-divider"></div>
+    <div class="nav-links">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="nav-link nav-previous">
+        <div class="nav-direction">← Previous</div>
+        <div class="nav-title">{{ page.previous.title }}</div>
+        {% if page.previous.date %}
+        <div class="nav-date">{{ page.previous.date | date: "%B %-d, %Y" }}</div>
+        {% endif %}
+      </a>
+      {% endif %}
+      
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="nav-link nav-next">
+        <div class="nav-direction">Next →</div>
+        <div class="nav-title">{{ page.next.title }}</div>
+        {% if page.next.date %}
+        <div class="nav-date">{{ page.next.date | date: "%B %-d, %Y" }}</div>
+        {% endif %}
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
 </article> 
