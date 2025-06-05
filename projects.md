@@ -13,9 +13,17 @@ Here are some of the projects I've worked on:
 {% assign sorted_projects = site.projects | sort: "release_date" | reverse %}
 {% for project in sorted_projects %}
   <a href="{{ project.url }}" class="project-item">
-    <span class="project-emoji">{{ project.emoji | default: "🔨" }}</span>
-    <strong>{{ project.title }}</strong>
-    <div class="project-description">{{ project.description }}</div>
+    <div class="project-meta-info">
+      <span class="project-number">{{ forloop.index }}</span>
+      <span class="project-date">{% if project.release_date %}{{ project.release_date | date: "%B %Y" }}{% else %}{{ project.released }}{% endif %}</span>
+    </div>
+    <div class="project-content">
+      <div class="project-title-row">
+        <span class="project-emoji">{{ project.emoji | default: "🔨" }}</span>
+        <strong>{{ project.title }}</strong>
+      </div>
+      <div class="project-description">{{ project.description }}</div>
+    </div>
   </a>
 {% endfor %}
 </div> 

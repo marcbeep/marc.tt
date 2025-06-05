@@ -17,6 +17,15 @@ emoji: "🎣"
 
 CVFish was a platform designed to help university students secure their first job opportunities by streamlining the job application process and providing tools for career development.
 
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/fYGgfOzU1BU"
+    title="CVFish Demo"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## The Problem
 
 Many students struggle with:
