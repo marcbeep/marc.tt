@@ -759,3 +759,71 @@ pre > code {
   background: var(--color-highlight-light);
   z-index: -1;
 }
+
+/* Latest Activities Section */
+.latest-activities {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: var(--color-highlight-light);
+  border-radius: 8px;
+  
+  h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+  }
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.activity-card {
+  background: var(--color-light);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-highlight-dark);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+  }
+  
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    .activity-icon {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .activity-title {
+    font-weight: 500;
+    color: var(--color-dark);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.25rem;
+    
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+  
+  .activity-date {
+    font-size: 0.8rem;
+    color: var(--color-secondary);
+  }
+}
