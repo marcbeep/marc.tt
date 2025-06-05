@@ -7,6 +7,8 @@ description: "A digital product passport solution for clothing brands."
 visit: https://worldtag.co.uk
 github: https://github.com/marcbeep/worldtag
 released: "March 2024"
+release_date: 2024-03-01
+emoji: "🏷️"
 ---
 
 # WorldTag
