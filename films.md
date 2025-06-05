@@ -17,7 +17,7 @@ See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
     max-width: 1000px;
     margin: 40px auto;
     text-align: left;
-    padding: 20px;
+    padding: 0;
   }
   .video-section {
     margin-bottom: 30px;
