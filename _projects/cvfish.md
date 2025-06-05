@@ -6,6 +6,7 @@ title: "CVFish"
 description: "Helps students get their first jobs."
 visit: null
 github: null
+date: 2024-07-19
 release_date: 2024-07-19
 emoji: "🎣"
 ---
