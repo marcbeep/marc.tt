@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: writings
+title: Writings
 description: A collection of Marc Beepath's writings, thoughts, and insights on software engineering, technology, and personal experiences.
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: films
+title: Films
 description: A collection of Marc Beepath's films.
 
 ---

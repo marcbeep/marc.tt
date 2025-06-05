@@ -1,4 +1,5 @@
 ---
+title: Projects
 layout: default
 permalink: projects
 description: A collection of Marc Beepath's projects.
