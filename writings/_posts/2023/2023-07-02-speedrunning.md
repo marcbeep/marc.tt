@@ -1,5 +1,6 @@
 ---
 layout: writings
+title: Speedrunning in your 20s
 permalink: speedrunning
 categories: writings
 description: Chill out.
