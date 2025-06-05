@@ -10,7 +10,7 @@ I also work part time as a Software Engineer, currently based in the UK.
 
 Check out my [projects](/projects) to see what I've been working on.
 
-When I'm not making computers say Hello World, I make short [films](/films) and [write](/writings).
+When I'm not making computers say Hello World, I [write](/writings) and make short [films](/films).
 
 <figure>
   <img src="assets/imgs/home.webp" alt="Me & a penguin in Lisbon">
@@ -21,26 +21,25 @@ When I'm not making computers say Hello World, I make short [films](/films) and 
   <div class="activities-grid">
     {% assign latest_project = site.projects | sort: "release_date" | reverse | first %}
     {% if latest_project %}
-    <div class="activity-card">
-      <h3><span class="activity-icon">🔨</span>Latest Project</h3>
-      <a href="{{ latest_project.url }}" class="activity-title">{{ latest_project.title }}</a>
+    <a href="{{ latest_project.url }}" class="activity-card">
+      <div class="activity-label">Latest Project</div>
+      <div class="activity-title">{{ latest_project.title }}</div>
       <div class="activity-date">{% if latest_project.release_date %}{{ latest_project.release_date | date: "%B %Y" }}{% else %}{{ latest_project.released }}{% endif %}</div>
-    </div>
+    </a>
     {% endif %}
 
     {% assign latest_post = site.categories.writings | first %}
     {% if latest_post %}
-    <div class="activity-card">
-      <h3><span class="activity-icon">✍️</span>Latest Writing</h3>
-      <a href="{{ latest_post.url }}" class="activity-title">{{ latest_post.title }}</a>
-      <div class="activity-date">{{ latest_post.date | date: "%B %d, %Y" }}</div>
-    </div>
+    <a href="{{ latest_post.url }}" class="activity-card">
+      <div class="activity-label">Latest Writing</div>
+      <div class="activity-title">{{ latest_post.title }}</div>
+      <div class="activity-date">{{ latest_post.date | date: "%B %Y" }}</div>
+    </a>
     {% endif %}
 
-    <div class="activity-card" id="latest-film-card">
-      <h3><span class="activity-icon">🎬</span>Latest Film</h3>
+    <a href="#" target="_blank" class="activity-card" id="latest-film-card">
       <div id="latest-film-content">Loading...</div>
-    </div>
+    </a>
   </div>
 </div>
 
@@ -66,9 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const title = latestVideo.title;
       const publishedAt = new Date(latestVideo.publishedAt);
       
+      const filmCard = document.getElementById('latest-film-card');
+      filmCard.href = `https://www.youtube.com/watch?v=${videoId}`;
+      
       document.getElementById('latest-film-content').innerHTML = `
-        <a href="https://www.youtube.com/watch?v=${videoId}" class="activity-title" target="_blank">${title}</a>
-        <div class="activity-date">${publishedAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+        <div class="activity-label">Latest Film</div>
+        <div class="activity-title">${title}</div>
+        <div class="activity-date">${publishedAt.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</div>
       `;
     })
     .catch(error => {
