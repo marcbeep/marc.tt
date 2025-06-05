@@ -10,7 +10,7 @@ Here are some of the projects I've worked on:
 
 <div class="projects-list">
 
-  <a href="https://worldtag.co.uk" class="project-item">
+  <a href="/worldtag" class="project-item">
     <span class="project-emoji">🏷️</span>
     <strong>WorldTag</strong>
     <div class="project-description">A digital product passport solution for clothing brands.</div>

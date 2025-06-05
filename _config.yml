@@ -10,6 +10,12 @@ github: "marcbeep"
 linkedin: "marcbeep"
 youtube: "@MarcsFieldnotes"
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:path/
+
 # SEO Plugins
 plugins:
   - jekyll-seo-tag
@@ -34,3 +40,10 @@ defaults:
       comments: false
       share: true
       keywords: "software engineering, AI, fintech, startups, technology, personal blog"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      author: "Marc Beepath"
