@@ -130,4 +130,4 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-> PS. This site was written in Markdown and is intentionally simple due to my affinity to the [Small Web](https://benhoyt.com/writings/the-small-web-is-beautiful/).
+Here's to some more.
