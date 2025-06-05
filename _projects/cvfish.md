@@ -7,7 +7,7 @@ description: "Helps students get their first jobs."
 visit: https://www.youtube.com/watch?v=fYGgfOzU1BU
 github: null
 released: "2023"
-release_date: 2023-05-01
+release_date: 2024-07-19
 emoji: "🎣"
 ---
 
