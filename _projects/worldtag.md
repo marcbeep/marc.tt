@@ -7,7 +7,6 @@ description: "A digital product passport solution for clothing brands."
 visit: "https://worldtag.co.uk"
 github: null
 date: 2024-10-29
-release_date: 2024-10-29
 emoji: "🏷️"
 ---
 

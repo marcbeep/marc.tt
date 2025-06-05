@@ -7,7 +7,6 @@ description: "A zero based budgeting tool."
 visit: null
 github: "https://github.com/marcbeep/spenny"
 date: 2024-06-01
-release_date: 2024-06-01
 emoji: "💷"
 ---
 
