@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="writing">
+  {% if page.image %}
+  <div class="writing-banner">
+    <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" class="writing-banner-image">
+  </div>
+  {% endif %}
+
+  <header class="writing-header">
+    {% if page.date %}
+    <time class="writing-date" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </time>
+    {% endif %}
+    
+    <h1 class="writing-title">{{ page.title }}</h1>
+    
+    {% if page.description %}
+    <blockquote class="writing-description">
+      {{ page.description }}
+    </blockquote>
+    {% endif %}
+  </header>
+
+  <div class="writing-content">
+    {{ content }}
+  </div>
+</article> 

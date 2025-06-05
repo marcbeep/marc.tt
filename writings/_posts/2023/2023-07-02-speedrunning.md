@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: writings
 permalink: speedrunning
 categories: writings
 description: Chill out.
 image: /assets/writings/2023/speedrunning.webp
 ---
-
-# Speedrunning in your 20s
 
 A common feeling amongst people my age is to have everything in their life sorted by the age of 30.
 

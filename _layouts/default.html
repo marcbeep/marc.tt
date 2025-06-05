@@ -135,11 +135,6 @@
       {% endunless %}
 
       <!-- Page Content -->
-      {% if page.image %}
-      <div class="post-banner">
-        <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" class="post-banner-image">
-      </div>
-      {% endif %}
       {{ content }}
     </div>
 

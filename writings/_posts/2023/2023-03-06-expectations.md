@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: writings
+title: Letting go of Expectations
 permalink: expectations
 categories: writings
 description: Gracefully accept life.
 ---
-
-# Letting go of expectations
 
 Life does this funny thing where it never works out the way I've imagined.
 It's become the rule now that if I hold some sort of expectation, the opposite usually happens.
