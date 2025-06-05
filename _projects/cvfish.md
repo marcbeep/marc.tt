@@ -10,12 +10,6 @@ release_date: 2024-07-19
 emoji: "🎣"
 ---
 
-# CVFish
-
-> Helps students get their first jobs.
-
-CVFish was a platform designed to help university students secure their first job opportunities by streamlining the job application process and providing tools for career development.
-
 <div class="video-container">
   <iframe
     src="https://www.youtube.com/embed/fYGgfOzU1BU"

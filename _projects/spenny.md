@@ -5,16 +5,10 @@ categories: projects
 title: "Spenny"
 description: "A zero based budgeting tool."
 visit: null
-github: https://github.com/marcbeep/spenny
+github: "https://github.com/marcbeep/spenny"
 release_date: 2024-06-01
 emoji: "💷"
 ---
-
-# Spenny
-
-> A zero based budgeting tool.
-
-Spenny is a personal finance application that implements zero-based budgeting principles to help users manage their money more effectively and achieve their financial goals.
 
 ## The Problem
 

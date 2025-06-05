@@ -4,17 +4,11 @@ permalink: wildroutes
 categories: projects
 title: "Wildroutes"
 description: "Helps you discover nearby, off the beaten path adventures."
-visit: https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/
+visit: "https://news.liverpool.ac.uk/2023/05/10/enterprising-students-win-design-your-future-awards/"
 github: null
 release_date: 2023-05-10
 emoji: "🗺️"
 ---
-
-# Wildroutes
-
-> Helps you discover nearby, off the beaten path adventures.
-
-Wildroutes is an award-winning platform that helps adventure seekers discover hidden gems and unique experiences in their local area, promoting sustainable tourism and supporting local communities.
 
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/p97Xav8_Mzo?si=aMGz2FPOJKDMVRFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
