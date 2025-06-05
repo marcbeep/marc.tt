@@ -5,8 +5,7 @@ categories: projects
 title: "WorldTag"
 description: "A digital product passport solution for clothing brands."
 visit: https://worldtag.co.uk
-github: https://github.com/marcbeep/worldtag
-released: "March 2024"
+github: null
 release_date: 2024-10-29
 emoji: "🏷️"
 ---
