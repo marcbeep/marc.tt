@@ -12,11 +12,6 @@ Check out my [projects](/projects) to see what I've been working on.
 
 When I'm not making computers say Hello World, I [write](/writings) and make short [films](/films).
 
-<figure>
-  <img src="assets/imgs/home.webp" alt="Me & a penguin in Lisbon">
-  <figcaption>Me & a penguin in Lisbon. What a crossover</figcaption>
-</figure>
-
 <div class="latest-activities">
   <div class="activities-grid">
     {% assign latest_project = site.projects | sort: "release_date" | reverse | first %}
@@ -80,6 +75,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+<figure>
+  <img src="assets/imgs/home.webp" alt="Me & a penguin in Lisbon">
+  <figcaption>Me & a penguin in Lisbon. What a crossover</figcaption>
+</figure>
 
 ## Other bits
 

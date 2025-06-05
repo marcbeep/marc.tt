@@ -10,11 +10,15 @@ release_date: 2024-06-01
 emoji: "💷"
 ---
 
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/7zYYHl4npjQ?si=NVAsxklo-Feh8KDz" title="Spenny Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## The Problem
 
 Traditional budgeting tools often:
 - Are complex and overwhelming
-- Don't follow zero-based budgeting principles
+- Don't follow zero-based budgeting principles (ever dollar gets a job)
 - Lack flexibility for different income patterns
 - Don't provide actionable insights
 
@@ -29,8 +33,16 @@ Spenny offers:
 
 ## Technical Stack
 
-- React Native for cross-platform mobile
-- Firebase for backend services
-- Cloud Firestore for data storage
-- Authentication and security features
-- Offline capability 
+- React.js frontend
+- Node.js backend
+- MongoDB database
+
+## The story behind Spenny
+
+I have always been a massive fan of the app [You Need A Budget](https://ynab.com).
+Having been paranoid about not being in control of my finances, the concept of assigning every dollar to a job gave me comfort.
+However, YNAB cost me some money per month (around £15). 
+I felt like I could reduplicate it myself.
+
+Given that I needed to work on something substantial for my Undergraduate Final Year Project, I thought: Why not give it a go?
+I ended up scoring really well on my final dissertation and Spenny remains something I spent a lot of time on and I'm proud of.

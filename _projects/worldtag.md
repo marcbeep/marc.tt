@@ -30,10 +30,17 @@ WorldTag provides a simple way for brands to:
 - Share sustainability credentials
 - Engage with customers through product stories
 
-## Technical Stack
+## The story behind WorldTag
 
-- Next.js for the frontend
-- Node.js backend with Express
-- MongoDB for data storage
-- AWS for cloud infrastructure
-- NFC technology for physical-digital linking 
+My friend [Virej](https://virejdasani.github.io) and I decided to come together to hack together this idea.
+We spent time putting the above pitch together, building a landing page and putting together some demos for clothing companies.
+We reached out to them to provide some feedback and were met with a lukewarm response.
+Most brands simply were not aware of the impending regulation nor sensed the urgency to adopt a solution like this.
+
+Virej and I did submit this pitch to a Startup Accelerator and received the following feedback after being rejected:
+
+> We couldn't really see from the application why you would be the people to dominate this market and get ahead of the regulation coming down, particularly as it's likely some of the bigger retail players will be thinking of this already if they know this regulation is happening.
+
+Looking back on WorldTag, it was exciting to work on this with Virej.
+Although I suppose, when creating anything new, there's always a chance of not reaching product market fit.
+Hey ho, we'll take those lessons and roll 'em onto the next one ;)
