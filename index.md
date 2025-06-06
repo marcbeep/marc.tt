@@ -148,47 +148,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="achievements-timeline">
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-briefcase"></i></span><span class="timeline-date">SEP 2024</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">SEP 2024</span></span>
     <div class="timeline-content">Began working as a Software Engineer with the folks at <a href="https://ultamation.com">Ultamation</a> in the Liverpool Science Park whilst doing my Masters</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-graduation-cap"></i></span><span class="timeline-date">SEP 2024</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">school</span></span><span class="timeline-date">SEP 2024</span></span>
     <div class="timeline-content">Started my MSc in Advanced Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-certificate"></i></span><span class="timeline-date">JUN 2024</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">verified</span></span><span class="timeline-date">JUN 2024</span></span>
     <div class="timeline-content">Graduated from the University of Liverpool with a BSc in Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-briefcase"></i></span><span class="timeline-date">JUN 2023</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">JUN 2023</span></span>
     <div class="timeline-content">Interned as a Software Engineer for the summer at <a href="https://octopus.energy">Octopus Energy</a> in Manchester</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-trophy"></i></span><span class="timeline-date">MAY 2023</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">trophy</span></span><span class="timeline-date">MAY 2023</span></span>
     <div class="timeline-content"><a href="/wildroutes">Wildroutes</a> won first place at the Design Your Future Startup Pitching Competition</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-people-group"></i></span><span class="timeline-date">SEP 2022</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">groups</span></span><span class="timeline-date">SEP 2022</span></span>
     <div class="timeline-content">Began working as a Careers Coach at the University of Liverpool, whilst studying for my Bachelors</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-leaf"></i></span><span class="timeline-date">JUN 2022</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">eco</span></span><span class="timeline-date">JUN 2022</span></span>
     <div class="timeline-content">Spent the summer interning at <a href="https://voicefornature.com">Voice for Nature</a></div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-award"></i></span><span class="timeline-date">JUN 2020</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">military_tech</span></span><span class="timeline-date">JUN 2020</span></span>
     <div class="timeline-content">Awarded a <a href="https://napcol.bluechiptt.com/scholarships-2020/">national scholarship</a> from the Government of Trinidad & Tobago for excellence in Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-film"></i></span><span class="timeline-date">SEP 2021</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">movie</span></span><span class="timeline-date">SEP 2021</span></span>
     <div class="timeline-content"><a href="https://www.youtube.com/watch?v=q3DFanw9s40">Wrecked</a> is officially selected for the T&T Film Festival</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-medal"></i></span><span class="timeline-date">MAY 2020</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">stars</span></span><span class="timeline-date">MAY 2020</span></span>
     <div class="timeline-content">Earned the Duke of Edinburgh Gold Award and met the President of Trinidad and Tobago</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><i class="fa-regular fa-water"></i></span><span class="timeline-date">DEC 2019</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">scuba_diving</span></span><span class="timeline-date">DEC 2019</span></span>
     <div class="timeline-content">Became a certified PADI Rescue Diver</div>
   </div>
 </div>

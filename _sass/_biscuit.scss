@@ -1101,19 +1101,16 @@ pre > code {
     }
 
     .timeline-icon {
-      font-size: 1.25rem;
       color: var(--color-accent);
-      background: none;
-      border: none;
-      width: auto;
-      height: auto;
-      min-width: 0;
-      min-height: 0;
-      margin-right: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: none;
+      transition: transform 0.2s ease;
+
+      .material-symbols-rounded {
+        font-size: 24px;
+        line-height: 1;
+      }
     }
 
     .timeline-date {
