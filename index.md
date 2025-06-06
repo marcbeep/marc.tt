@@ -39,7 +39,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% if latest_post %}
     <a href="{{ latest_post.url }}" class="activity-card">
       <div class="activity-icon">
-        <span class="material-symbols-rounded">edit_note</span>
+        <span class="material-symbols-rounded">draw</span>
       </div>
       <div class="activity-label">Latest Writing</div>
       <div class="activity-title">{{ latest_post.title }}</div>
@@ -48,7 +48,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% else %}
     <div class="activity-card activity-empty">
       <div class="activity-icon">
-        <span class="material-symbols-rounded">edit_note</span>
+        <span class="material-symbols-rounded">draw</span>
       </div>
       <div class="activity-label">Latest Writing</div>
       <div class="activity-title">No writings yet</div>
