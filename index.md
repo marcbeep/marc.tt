@@ -18,9 +18,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% if latest_project %}
     <a href="{{ latest_project.url }}" class="activity-card">
       <div class="activity-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm10 4H7v2h10v-2zM7 15h7v2H7v-2z" fill="currentColor"/>
-        </svg>
+        <span class="material-symbols-rounded">terminal</span>
       </div>
       <div class="activity-label">Latest Project</div>
       <div class="activity-title">{{ latest_project.title }}</div>
@@ -29,9 +27,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% else %}
     <div class="activity-card activity-empty">
       <div class="activity-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm10 4H7v2h10v-2zM7 15h7v2H7v-2z" fill="currentColor"/>
-        </svg>
+        <span class="material-symbols-rounded">terminal</span>
       </div>
       <div class="activity-label">Latest Project</div>
       <div class="activity-title">No projects yet</div>
@@ -43,9 +39,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% if latest_post %}
     <a href="{{ latest_post.url }}" class="activity-card">
       <div class="activity-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 3v2H4v14h16v-8h2v10H2V3h12zm3-2l5 5h-5V1zm-8 12h8v2H9v-2zm0-4h8v2H9V9zm0-4h4v2H9V5z" fill="currentColor"/>
-        </svg>
+        <span class="material-symbols-rounded">edit_note</span>
       </div>
       <div class="activity-label">Latest Writing</div>
       <div class="activity-title">{{ latest_post.title }}</div>
@@ -54,9 +48,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% else %}
     <div class="activity-card activity-empty">
       <div class="activity-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 3v2H4v14h16v-8h2v10H2V3h12zm3-2l5 5h-5V1zm-8 12h8v2H9v-2zm0-4h8v2H9V9zm0-4h4v2H9V5z" fill="currentColor"/>
-        </svg>
+        <span class="material-symbols-rounded">edit_note</span>
       </div>
       <div class="activity-label">Latest Writing</div>
       <div class="activity-title">No writings yet</div>
@@ -67,9 +59,7 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     <a href="#" target="_blank" class="activity-card" id="latest-film-card">
       <div id="latest-film-content">
         <div class="activity-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
-          </svg>
+          <span class="material-symbols-rounded">movie</span>
         </div>
         <div class="activity-label">Latest Film</div>
         <div class="activity-title">Loading...</div>
@@ -91,9 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filmCard.removeAttribute('href');
     filmContent.innerHTML = `
       <div class="activity-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
-        </svg>
+        <span class="material-symbols-rounded">movie</span>
       </div>
       <div class="activity-label">Latest Film</div>
       <div class="activity-title">No films available</div>
@@ -123,9 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       filmContent.innerHTML = `
         <div class="activity-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
-          </svg>
+          <span class="material-symbols-rounded">movie</span>
         </div>
         <div class="activity-label">Latest Film</div>
         <div class="activity-title">${title}</div>

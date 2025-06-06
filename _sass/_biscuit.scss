@@ -937,10 +937,9 @@ pre > code {
     align-items: center;
     justify-content: center;
     
-    svg {
-      display: block;
-      width: 24px;
-      height: 24px;
+    .material-symbols-rounded {
+      font-size: 28px;
+      line-height: 1;
     }
   }
 
