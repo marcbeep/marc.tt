@@ -932,6 +932,10 @@ pre > code {
     margin-bottom: 1rem;
     color: var(--color-accent);
     transition: transform 0.2s ease, color 0.2s ease;
+    transform-origin: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     
     svg {
       display: block;
@@ -973,7 +977,7 @@ pre > code {
     box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
     
     .activity-icon {
-      transform: scale(1.1);
+      transform: scale(1.05);
       color: var(--color-light);
     }
     
