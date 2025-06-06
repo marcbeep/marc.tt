@@ -17,23 +17,64 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
     {% assign latest_project = site.projects | sort: "release_date" | reverse | first %}
     {% if latest_project %}
     <a href="{{ latest_project.url }}" class="activity-card">
+      <div class="activity-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm10 4H7v2h10v-2zM7 15h7v2H7v-2z" fill="currentColor"/>
+        </svg>
+      </div>
       <div class="activity-label">Latest Project</div>
       <div class="activity-title">{{ latest_project.title }}</div>
       <div class="activity-date">{% if latest_project.date %}{{ latest_project.date | date: "%B %Y" }}{% else %}{{ latest_project.released }}{% endif %}</div>
     </a>
+    {% else %}
+    <div class="activity-card activity-empty">
+      <div class="activity-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm10 4H7v2h10v-2zM7 15h7v2H7v-2z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="activity-label">Latest Project</div>
+      <div class="activity-title">No projects yet</div>
+      <div class="activity-date">Stay tuned</div>
+    </div>
     {% endif %}
 
     {% assign latest_post = site.categories.writings | first %}
     {% if latest_post %}
     <a href="{{ latest_post.url }}" class="activity-card">
+      <div class="activity-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 3v2H4v14h16v-8h2v10H2V3h12zm3-2l5 5h-5V1zm-8 12h8v2H9v-2zm0-4h8v2H9V9zm0-4h4v2H9V5z" fill="currentColor"/>
+        </svg>
+      </div>
       <div class="activity-label">Latest Writing</div>
       <div class="activity-title">{{ latest_post.title }}</div>
       <div class="activity-date">{{ latest_post.date | date: "%B %Y" }}</div>
     </a>
+    {% else %}
+    <div class="activity-card activity-empty">
+      <div class="activity-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 3v2H4v14h16v-8h2v10H2V3h12zm3-2l5 5h-5V1zm-8 12h8v2H9v-2zm0-4h8v2H9V9zm0-4h4v2H9V5z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="activity-label">Latest Writing</div>
+      <div class="activity-title">No writings yet</div>
+      <div class="activity-date">Stay tuned</div>
+    </div>
     {% endif %}
 
     <a href="#" target="_blank" class="activity-card" id="latest-film-card">
-      <div id="latest-film-content">Loading...</div>
+      <div id="latest-film-content">
+        <div class="activity-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="activity-label">Latest Film</div>
+        <div class="activity-title">Loading...</div>
+        <div class="activity-date"></div>
+      </div>
     </a>
   </div>
 </div>
@@ -42,6 +83,23 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
 document.addEventListener('DOMContentLoaded', function() {
   const API_KEY = "AIzaSyBP_ffszCIrC6efTQ_gyx3-mpCdyuDukPY";
   const CHANNEL_ID = "UCikA-2x66qt2odtnyuOEQCg";
+  const filmCard = document.getElementById('latest-film-card');
+  const filmContent = document.getElementById('latest-film-content');
+
+  const setErrorState = () => {
+    filmCard.classList.add('activity-empty');
+    filmCard.removeAttribute('href');
+    filmContent.innerHTML = `
+      <div class="activity-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="activity-label">Latest Film</div>
+      <div class="activity-title">No films available</div>
+      <div class="activity-date">Check back later</div>
+    `;
+  };
 
   fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${CHANNEL_ID}&key=${API_KEY}`)
     .then(response => response.json())
@@ -60,10 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const title = latestVideo.title;
       const publishedAt = new Date(latestVideo.publishedAt);
       
-      const filmCard = document.getElementById('latest-film-card');
       filmCard.href = `https://www.youtube.com/watch?v=${videoId}`;
+      filmCard.classList.remove('activity-empty');
       
-      document.getElementById('latest-film-content').innerHTML = `
+      filmContent.innerHTML = `
+        <div class="activity-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM8 7l8 5-8 5V7z" fill="currentColor"/>
+          </svg>
+        </div>
         <div class="activity-label">Latest Film</div>
         <div class="activity-title">${title}</div>
         <div class="activity-date">${publishedAt.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</div>
@@ -71,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => {
       console.error("Error fetching latest video:", error);
-      document.getElementById('latest-film-content').innerHTML = 'Error loading latest film.';
+      setErrorState();
     });
 });
 </script>
