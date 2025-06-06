@@ -109,11 +109,16 @@
 
         <!-- Right: Menu Button & Dropdown -->
         <div class="navbar-right">
-          <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+          <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+            <span class="menu-text">Menu</span>
+            <span class="menu-icon"></span>
+          </button>
           <div id="menuDropdown" class="menu-dropdown">
-            <a href="/projects">Projects</a>
-            <a href="/writings">Writings</a>
-            <a href="/films">Films</a>
+            <div class="menu-dropdown-content">
+              <a href="/projects"><span class="menu-item-text">Projects</span></a>
+              <a href="/writings"><span class="menu-item-text">Writings</span></a>
+              <a href="/films"><span class="menu-item-text">Films</span></a>
+            </div>
           </div>
         </div>
       </div>
