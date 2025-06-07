@@ -5,7 +5,9 @@ categories: projects
 title: "Spenny"
 description: "A zero based budgeting tool."
 visit: null
-github: "https://github.com/marcbeep/spenny"
+external_links:
+  - label: GitHub
+    url: "https://github.com/marcbeep/spenny"
 date: 2024-06-01
 emoji: "💷"
 ---

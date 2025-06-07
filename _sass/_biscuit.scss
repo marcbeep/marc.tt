@@ -843,6 +843,7 @@ pre > code {
 
 .project-chips {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
 }
@@ -856,7 +857,6 @@ pre > code {
 
   &:hover {
     background: var(--color-accent);
-    color: var(--color-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
   }
@@ -866,7 +866,6 @@ pre > code {
     font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
-    white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     display: flex;
@@ -877,7 +876,6 @@ pre > code {
     .material-symbols-rounded {
       font-size: 18px;
       line-height: 1;
-      vertical-align: middle;
     }
   }
 

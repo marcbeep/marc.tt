@@ -5,7 +5,6 @@ categories: projects
 title: "Wildroutes"
 description: "Helps you discover nearby, off the beaten path adventures."
 visit: null
-github: null
 date: 2023-05-10
 emoji: "🗺️"
 external_links:
