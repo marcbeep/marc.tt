@@ -27,6 +27,9 @@ collections:
   projects:
     output: true
     permalink: /:path/
+  films:
+    output: true
+    permalink: /:path/
 
 # Sitemap Configuration
 sitemap:
@@ -70,4 +73,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+      author: "Marc Beepath"
+  -
+    scope:
+      path: ""
+      type: "films"
+    values:
+      layout: "films"
       author: "Marc Beepath"

@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<article class="film">
+  {% if page.visit or page.date or page.emoji %}
+  <div class="film-meta">
+    {% if page.date %}
+    <div class="release-date">
+      <span class="meta-label">Release Date</span>
+      <span class="meta-value">
+        {{ page.date | date: "%B %Y" }}
+      </span>
+    </div>
+    {% endif %}
+    
+    <div class="film-chips">
+      {% if page.visit %}
+      <div class="film-meta-chip">
+        <a href="{{ page.visit }}" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-rounded">play_circle</span>
+          Watch
+        </a>
+      </div>
+      {% endif %}
+
+      {% if page.external_links %}
+        {% for link in page.external_links %}
+        <div class="film-meta-chip">
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-rounded">link</span>
+            {{ link.label }}
+          </a>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+
+  <header class="film-header">
+    {% if page.emoji %}
+    <div class="film-emoji">{{ page.emoji }}</div>
+    {% endif %}
+    
+    <h1 class="film-title">{{ page.title }}</h1>
+    
+    {% if page.description %}
+    <blockquote class="film-description">
+      {{ page.description }}
+    </blockquote>
+    {% endif %}
+  </header>
+
+  <div class="film-content">
+    {{ content }}
+  </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-navigation">
+    <div class="nav-divider"></div>
+    <div class="nav-links">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="nav-link nav-previous">
+        <div class="nav-direction">← Previous</div>
+        <div class="nav-title">{{ page.previous.title }}</div>
+        {% if page.previous.date %}
+        <div class="nav-date">{{ page.previous.date | date: "%B %-d, %Y" }}</div>
+        {% endif %}
+      </a>
+      {% endif %}
+      
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="nav-link nav-next">
+        <div class="nav-direction">Next →</div>
+        <div class="nav-title">{{ page.next.title }}</div>
+        {% if page.next.date %}
+        <div class="nav-date">{{ page.next.date | date: "%B %-d, %Y" }}</div>
+        {% endif %}
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</article> 
