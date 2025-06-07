@@ -10,6 +10,22 @@ github: "marcbeep"
 linkedin: "marcbeep"
 youtube: "@MarcsFieldnotes"
 
+# Sitemap Configuration
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude:
+    - /404.html
+    - /assets/
+    - /css/
+    - /js/
+    - /images/
+    - /favicons/
+  include:
+    - /projects/
+    - /writings/
+    - /films/
+
 # Collections
 collections:
   projects:
