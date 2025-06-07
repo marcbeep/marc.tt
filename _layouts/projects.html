@@ -3,21 +3,34 @@ layout: default
 ---
 
 <article class="project">
-  {% if page.visit or page.github or page.date or page.released %}
-  <div class="project-meta">
+  {% if page.image %}
+  <div class="project-banner">
+    <img src="{{ page.image | absolute_url }}" alt="{{ page.title }}" class="project-banner-image">
+  </div>
+  {% endif %}
+
+  <header class="project-header">
     {% if page.date or page.released %}
-    <div class="release-date">
-      <span class="meta-label">Initial Release</span>
-      <span class="meta-value">
-        {% if page.date %}
-          {{ page.date | date: "%B %Y" }}
-        {% else %}
-          {{ page.released }}
-        {% endif %}
-      </span>
-    </div>
+    <time class="project-date">
+      {% if page.date %}
+        {{ page.date | date: "%B %Y" }}
+      {% else %}
+        {{ page.released }}
+      {% endif %}
+    </time>
     {% endif %}
     
+    <h1 class="project-title">{{ page.title }}</h1>
+    
+    {% if page.description %}
+    <blockquote class="project-description">
+      {{ page.description }}
+    </blockquote>
+    {% endif %}
+  </header>
+
+  {% if page.visit or page.github or page.external_links %}
+  <div class="project-meta">
     <div class="project-chips">
       {% if page.visit %}
       <div class="project-meta-chip">
@@ -50,16 +63,6 @@ layout: default
     </div>
   </div>
   {% endif %}
-
-  <header class="project-header">
-    <h1 class="project-title">{{ page.title }}</h1>
-    
-    {% if page.description %}
-    <blockquote class="project-description">
-      {{ page.description }}
-    </blockquote>
-    {% endif %}
-  </header>
 
   <div class="project-content">
     {{ content }}
