@@ -10,21 +10,17 @@ github: "marcbeep"
 linkedin: "marcbeep"
 youtube: "@MarcsFieldnotes"
 
-# Sitemap Configuration
-sitemap:
-  changefreq: weekly
-  priority: 0.8
-  exclude:
-    - /404.html
-    - /assets/
-    - /css/
-    - /js/
-    - /images/
-    - /favicons/
-  include:
-    - /projects/
-    - /writings/
-    - /films/
+# Build settings
+markdown: kramdown
+exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Collections
 collections:
@@ -32,23 +28,21 @@ collections:
     output: true
     permalink: /:path/
 
-# SEO Plugins
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap # Generates a sitemap.xml for search engines
-  - jekyll-feed # Creates an RSS feed for blog updates
-
-# Build settings
-markdown: kramdown
-exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]
-sass:
-  style: compressed
-
-# Performance optimizations
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
+# Sitemap Configuration
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude:
+    - /404.html
+    - /assets/**/*
+    - /css/**/*
+    - /js/**/*
+    - /images/**/*
+    - /favicons/**/*
+  include:
+    - /projects/**/*
+    - /writings/**/*
+    - /films/**/*
 
 # Compression and optimization
 compress_html:
