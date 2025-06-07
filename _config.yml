@@ -40,9 +40,23 @@ plugins:
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]
 sass:
   style: compressed
+
+# Performance optimizations
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Compression and optimization
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: development
 
 # Default front matter
 defaults:

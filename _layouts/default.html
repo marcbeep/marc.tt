@@ -6,6 +6,10 @@
     <meta name="description" content="{{ page.description | default: site.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
+    <meta http-equiv="Expires" content="{{ site.time | date: '%a, %d %b %Y %H:%M:%S GMT' }}">
+    
     <!-- OpenGraph Meta Tags -->
     <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}" />
     <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
