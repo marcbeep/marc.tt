@@ -1293,3 +1293,117 @@ pre > code {
     }
   }
 }
+
+/* Film Styles */
+.film {
+  margin-bottom: 3rem;
+}
+
+.film-header {
+  margin-bottom: 2rem;
+}
+
+.film-date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+  font-family: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.film-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.film-description {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.film-banner {
+  margin-bottom: 2rem;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.film-meta {
+  margin: 2rem 0;
+}
+
+.film-meta-chip {
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-accent);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+  }
+
+  a {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+    
+    .material-symbols-rounded {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+
+  &:hover a {
+    color: var(--color-light);
+  }
+}
+
+.film-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.film-content {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .film-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .film-title {
+    font-size: 2rem;
+  }
+  
+  .film-date {
+    font-size: 0.8rem;
+  }
+  
+  .film-description {
+    font-size: 1rem;
+  }
+}

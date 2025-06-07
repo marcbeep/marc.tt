@@ -233,3 +233,24 @@ See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
 </script>
 
 {% endraw %}
+
+## Notable Past Films
+
+<div class="projects-list">
+{% assign sorted_films = site.films | sort: "date" | reverse %}
+{% for film in sorted_films %}
+  <a href="{{ film.url }}" class="project-item">
+    <div class="project-meta-info">
+      <span class="project-number">{{ forloop.index }}</span>
+      <span class="project-date">{% if film.date %}{{ film.date | date: "%B %Y" }}{% else %}{{ film.released }}{% endif %}</span>
+    </div>
+    <div class="project-content">
+      <div class="project-title-row">
+        <span class="project-emoji">{{ film.emoji | default: "🎬" }}</span>
+        <strong>{{ film.title }}</strong>
+      </div>
+      <div class="project-description">{{ film.description }}</div>
+    </div>
+  </a>
+{% endfor %}
+</div>
