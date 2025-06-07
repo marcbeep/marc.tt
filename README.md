@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is my GitHub Pages repo for my [personal website](https://marcbeep.com), based on the Jekyll theme Biscuit.
+This is my GitHub Pages repo for my [personal website](https://marc.tt), based on the Jekyll theme Biscuit.
 
 ## Installation
 
