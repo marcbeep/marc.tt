@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 permalink: spenny
 categories: projects
 title: "Spenny"

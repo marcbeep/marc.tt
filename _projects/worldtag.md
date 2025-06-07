@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 permalink: worldtag
 categories: projects
 title: "WorldTag"

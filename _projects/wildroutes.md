@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 permalink: wildroutes
 categories: projects
 title: "Wildroutes"

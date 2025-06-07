@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: projects
 permalink: cvfish
 categories: projects
 title: "CVFish"
