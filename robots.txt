@@ -1,0 +1,27 @@
+# robots.txt for marc.tt
+User-agent: *
+Allow: /
+Allow: /projects/
+Allow: /writings/
+Allow: /films/
+
+# Disallow unnecessary directories and files
+Disallow: /_site/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /_sass/
+Disallow: /_projects/
+Disallow: /_films/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /.jekyll-cache/
+Disallow: /.git/
+Disallow: /.DS_Store
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Sitemap location
+Sitemap: https://marc.tt/sitemap.xml 
