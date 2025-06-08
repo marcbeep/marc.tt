@@ -162,16 +162,16 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">Spent the summer interning at <a href="https://voicefornature.com">Voice for Nature</a></div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">military_tech</span></span><span class="timeline-date">JUN 2020</span></span>
-    <div class="timeline-content">Awarded a <a href="https://napcol.bluechiptt.com/scholarships-2020/">national scholarship</a> from the Government of Trinidad & Tobago for excellence in Computer Science</div>
-  </div>
-  <div class="timeline-item">
     <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">celebration</span></span><span class="timeline-date">SEP 2021</span></span>
     <div class="timeline-content"><a href="/goodbyeforever">Goodbye Forever</a> became a tiny local hit</div>
   </div>
   <div class="timeline-item">
     <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">movie</span></span><span class="timeline-date">SEP 2021</span></span>
     <div class="timeline-content"><a href="/wrecked">Wrecked</a> is officially selected for the T&T Film Festival</div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">military_tech</span></span><span class="timeline-date">JUN 2020</span></span>
+    <div class="timeline-content">Awarded a <a href="https://napcol.bluechiptt.com/scholarships-2020/">national scholarship</a> from the Government of Trinidad & Tobago for excellence in Computer Science</div>
   </div>
   <div class="timeline-item">
     <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">stars</span></span><span class="timeline-date">MAY 2020</span></span>
