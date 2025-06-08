@@ -4,10 +4,6 @@ permalink: cvfish
 categories: projects
 title: "CVFish"
 description: "Helps students get their first jobs."
-visit: null
-external_links:
-  - label: GitHub
-    url: null
 date: 2024-07-19
 emoji: "🎣"
 ---

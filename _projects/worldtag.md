@@ -5,9 +5,6 @@ categories: projects
 title: "WorldTag"
 description: "A digital product passport solution for clothing brands."
 visit: "https://worldtag.co.uk"
-external_links:
-  - label: GitHub
-    url: null
 date: 2024-10-29
 emoji: "🏷️"
 ---
