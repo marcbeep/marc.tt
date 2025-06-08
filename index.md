@@ -184,3 +184,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 Here's to some more.
+
+<figure>
+  <img src="assets/imgs/speaking.webp" alt="Me speaking on stage">
+  <figcaption>Me (far left) speaking on stage at Design Your Future 2024</figcaption>
+</figure>
