@@ -1,13 +1,13 @@
 ---
 layout: projects
-permalink: code
+permalink: codeduck
 categories: projects
-title: "Code"
+title: "CodeDuck"
 description: "Flashcards for data structures and algorithm problems."
 visit: "https://code.marc.tt"
 external_links:
   - label: GitHub
-    url: "https://github.com/marcbeep/code"
+    url: "https://github.com/marcbeep/codeduck"
 date: 2025-06-13
 emoji: "🦆"
 ---
