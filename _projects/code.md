@@ -9,7 +9,7 @@ external_links:
   - label: GitHub
     url: "https://github.com/marcbeep/code"
 date: 2025-06-13
-emoji: "👾"
+emoji: "🦆"
 ---
 
 <figure>
