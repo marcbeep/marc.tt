@@ -17,6 +17,8 @@ emoji: "🦆"
   <figcaption>Screenshot of Code</figcaption>
 </figure>
 
+<br>
+
 My friends Daniel, Alex and I started doing LeetCode problems to get better at them and started to document our progress in a GitHub repository.
 
 I turned some of our solutions into flashcards with a NextJS site and made it look at bit nicer with some Framer Motion Animations.
