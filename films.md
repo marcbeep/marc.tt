@@ -218,7 +218,7 @@ See more on my [YouTube.](https://youtube.com/@MarcsFieldnotes)
 
           // 3. Next, if the most loved video is not the same as both the most recent and most viewed, show it.
           if (showMostLoved) {
-            document.getElementById("most-loved-video").innerHTML = createVideoElement(mostLovedVideo, "❤️ Most Loved");
+            document.getElementById("most-loved-video").innerHTML = createVideoElement(mostLovedVideo, "❤️ Most Loved by Others");
           } else {
             document.getElementById("most-loved").style.display = "none";
           }
