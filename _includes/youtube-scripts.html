@@ -1,0 +1,34 @@
+<script>
+  // YouTube API Configuration
+  const YOUTUBE_API_KEY = "{{ site.youtube_api_key }}";
+  const YOUTUBE_CHANNEL_ID = "{{ site.youtube_channel_id }}";
+
+  // Common YouTube API functions
+  function getChannelUploadsPlaylist() {
+    return fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${YOUTUBE_CHANNEL_ID}&key=${YOUTUBE_API_KEY}`)
+      .then(response => response.json())
+      .then(data => {
+        if (!data.items || data.items.length === 0) {
+          throw new Error("Channel not found.");
+        }
+        return data.items[0].contentDetails.relatedPlaylists.uploads;
+      });
+  }
+
+  function getLatestVideo(uploadsPlaylistId) {
+    return fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`)
+      .then(response => response.json())
+      .then(data => {
+        if (!data.items || data.items.length === 0) {
+          throw new Error("No videos found.");
+        }
+        return data.items[0].snippet;
+      });
+  }
+
+  function getVideoDetails(videoIds) {
+    return fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoIds.join(",")}&key=${YOUTUBE_API_KEY}`)
+      .then(response => response.json())
+      .then(data => data.items || []);
+  }
+</script> 

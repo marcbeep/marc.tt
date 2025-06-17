@@ -9,7 +9,7 @@ description: A collection of Marc Beepath's films.
 # Films
 
 Making films is a massive hobby of mine. 
-See more on my [YouTube.](https://youtube.com/@MarcBeepath)
+See more on my [YouTube.](https://youtube.com/@marcbeep)
 
 <!-- Inline CSS for Featured Videos -->
 <style>
@@ -92,12 +92,11 @@ See more on my [YouTube.](https://youtube.com/@MarcBeepath)
   </div>
 </div>
 
+{% include youtube-scripts.html %}
+
 {% raw %}
 
 <script>
-  const API_KEY = "AIzaSyBP_ffszCIrC6efTQ_gyx3-mpCdyuDukPY";
-  const CHANNEL_ID = "UCikA-2x66qt2odtnyuOEQCg";
-
   // Returns an HTML string for the video element and its badge.
   function createVideoElement(video, badgeText) {
     if (!video) return "";
@@ -119,17 +118,10 @@ See more on my [YouTube.](https://youtube.com/@MarcBeepath)
   }
 
   // Fetch the channel's uploads playlist ID.
-  fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${CHANNEL_ID}&key=${API_KEY}`)
-    .then(response => response.json())
-    .then(data => {
-      if (!data.items || data.items.length === 0) {
-        throw new Error("Channel not found.");
-      }
-      return data.items[0].contentDetails.relatedPlaylists.uploads;
-    })
+  getChannelUploadsPlaylist()
     .then(uploadsPlaylistId => {
       // Fetch the latest 4 videos from the uploads playlist.
-      return fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${uploadsPlaylistId}&key=${API_KEY}`)
+      return fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`)
         .then(response => response.json())
         .then(playlistData => {
           const videoIds = playlistData.items
@@ -141,11 +133,8 @@ See more on my [YouTube.](https://youtube.com/@MarcBeepath)
     })
     .then(({ videoIds, latestVideoId }) => {
       // Fetch detailed info (snippet and statistics) for the videos.
-      return fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoIds.join(",")}&key=${API_KEY}`)
-        .then(response => response.json())
-        .then(videoData => {
-          const videos = videoData.items || [];
-
+      return getVideoDetails(videoIds)
+        .then(videos => {
           // Determine the most recent, most viewed, and most loved videos.
           let latestVideo = videos.find(video => video.id === latestVideoId) || null;
           let mostViewedVideo = null;

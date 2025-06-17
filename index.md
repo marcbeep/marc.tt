@@ -69,10 +69,10 @@ When I'm not making computers say Hello World, I [write](/writings) and make sho
   </div>
 </div>
 
+{% include youtube-scripts.html %}
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const API_KEY = "AIzaSyBP_ffszCIrC6efTQ_gyx3-mpCdyuDukPY";
-  const CHANNEL_ID = "UCikA-2x66qt2odtnyuOEQCg";
   const filmCard = document.getElementById('latest-film-card');
   const filmContent = document.getElementById('latest-film-content');
 
@@ -89,19 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
   };
 
-  fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${CHANNEL_ID}&key=${API_KEY}`)
-    .then(response => response.json())
-    .then(data => {
-      if (!data.items || data.items.length === 0) throw new Error("Channel not found.");
-      return data.items[0].contentDetails.relatedPlaylists.uploads;
-    })
-    .then(uploadsPlaylistId => {
-      return fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1&playlistId=${uploadsPlaylistId}&key=${API_KEY}`);
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (!data.items || data.items.length === 0) throw new Error("No videos found.");
-      const latestVideo = data.items[0].snippet;
+  getChannelUploadsPlaylist()
+    .then(uploadsPlaylistId => getLatestVideo(uploadsPlaylistId))
+    .then(latestVideo => {
       const videoId = latestVideo.resourceId.videoId;
       const title = latestVideo.title;
       const publishedAt = new Date(latestVideo.publishedAt);

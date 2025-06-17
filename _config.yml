@@ -10,6 +10,10 @@ github: "marcbeep"
 linkedin: "marcbeep"
 youtube: "@MarcBeepath"
 
+# YouTube API Configuration
+youtube_api_key: "AIzaSyBP_ffszCIrC6efTQ_gyx3-mpCdyuDukPY"
+youtube_channel_id: "UCKoxl9AEeGte0uLwQxunldQ"
+
 # Build settings
 markdown: kramdown
 exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]

@@ -43,7 +43,7 @@ CVFish provided:
 ## The story behind CVFish
 
 Having worked at the Career Studio at the University of Liverpool part time for 2 whole years, I felt uniquely positioned to lend a helping hand to my fellow student colleagues.
-I really started CVFish as the first project to document on [Marc's Fieldnotes](https://youtube.com/@MarcBeepath).
+I really started CVFish as the first project to document on Marc's Fieldnotes (a YouTube channel).
 The idea was to take a startup from 0 to 1 and film the entire thing.
 I soon found out, it is a monumental task to code alone - let alone film and make a compelling story.
 
