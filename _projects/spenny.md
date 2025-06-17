@@ -13,7 +13,7 @@ emoji: "💷"
 ---
 
 <div class="video-container">
-<iframe src="https://www.youtube.com/embed/7zYYHl4npjQ?si=NVAsxklo-Feh8KDz" title="Spenny Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/sf2KNv4mHzU?si=0mU6uPr-WAkCIG-C" title="Spenny Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## The Problem
