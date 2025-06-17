@@ -108,10 +108,23 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
                      video.snippet.thumbnails.medium?.url || 
                      video.snippet.thumbnails.default?.url || "";
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+    
+    // Escape HTML in title to prevent XSS
+    const safeTitle = title.replace(/[&<>"']/g, function(match) {
+      const escape = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      };
+      return escape[match];
+    });
+    
     return `
       <a href="${videoUrl}" target="_blank">
-        ${thumbnail ? `<img src="${thumbnail}" alt="${title}">` : ""}
-        <h3>${title}</h3>
+        ${thumbnail ? `<img src="${thumbnail}" alt="${safeTitle}">` : ""}
+        <h3>${safeTitle}</h3>
       </a>
       <small>${badgeText}</small>
     `;
@@ -120,10 +133,18 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
   // Fetch the channel's uploads playlist ID.
   getChannelUploadsPlaylist()
     .then(uploadsPlaylistId => {
-      // Fetch the latest 4 videos from the uploads playlist.
+      // Fetch the latest 20 videos from the uploads playlist.
       return fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${uploadsPlaylistId}&key=${YOUTUBE_API_KEY}`)
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+          }
+          return response.json();
+        })
         .then(playlistData => {
+          if (!playlistData.items || playlistData.items.length === 0) {
+            throw new Error("No videos found in playlist.");
+          }
           const videoIds = playlistData.items
             .map(item => item.snippet.resourceId.videoId)
             .filter(id => id); // Remove any invalid IDs.
@@ -135,28 +156,42 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
       // Fetch detailed info (snippet and statistics) for the videos.
       return getVideoDetails(videoIds)
         .then(videos => {
+          if (!videos || videos.length === 0) {
+            throw new Error("No video details retrieved.");
+          }
+          
           // Determine the most recent, most viewed, and most loved videos.
-          let latestVideo = videos.find(video => video.id === latestVideoId) || null;
+          let latestVideo = videos.find(video => video.id === latestVideoId) || videos[0];
           let mostViewedVideo = null;
           let mostLovedVideo = null;
           let highestViewCount = -1;
           let highestLoveRatio = -1;
+          let validVideos = 0;
 
           videos.forEach(video => {
             if (!video || !video.statistics) return;
+            
             const stats = video.statistics;
             const viewCount = parseInt(stats.viewCount || "0", 10);
             const likeCount = parseInt(stats.likeCount || "0", 10);
+            
+            // Skip videos with no views for love ratio calculation
+            if (viewCount > 0) {
+              validVideos++;
+              
+              if (viewCount > highestViewCount) {
+                highestViewCount = viewCount;
+                mostViewedVideo = video;
+              }
 
-            if (viewCount > highestViewCount) {
-              highestViewCount = viewCount;
+              const loveRatio = likeCount / viewCount;
+              if (loveRatio > highestLoveRatio) {
+                highestLoveRatio = loveRatio;
+                mostLovedVideo = video;
+              }
+            } else if (viewCount === 0 && !mostViewedVideo) {
+              // If no videos have views, use the first one as fallback
               mostViewedVideo = video;
-            }
-
-            const loveRatio = viewCount > 0 ? likeCount / viewCount : 0;
-            if (loveRatio > highestLoveRatio) {
-              highestLoveRatio = loveRatio;
-              mostLovedVideo = video;
             }
           });
 
@@ -167,6 +202,14 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
           }
           if (!mostViewedVideo) mostViewedVideo = latestVideo;
           if (!mostLovedVideo) mostLovedVideo = latestVideo;
+
+          // Handle edge case where we have very few videos
+          if (validVideos <= 1) {
+            document.getElementById("latest-video").innerHTML = createVideoElement(latestVideo, "✅ Latest Film");
+            document.getElementById("most-viewed").style.display = "none";
+            document.getElementById("most-loved").style.display = "none";
+            return;
+          }
 
           // Determine relationships.
           const isMVSameAsLatest = latestVideo.id === mostViewedVideo.id;
@@ -207,7 +250,7 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
 
           // 3. Next, if the most loved video is not the same as both the most recent and most viewed, show it.
           if (showMostLoved) {
-            document.getElementById("most-loved-video").innerHTML = createVideoElement(mostLovedVideo, "❤️ Most Loved by Audience");
+            document.getElementById("most-loved-video").innerHTML = createVideoElement(mostLovedVideo, "❤️ Most Loved by the Audience");
           } else {
             document.getElementById("most-loved").style.display = "none";
           }
@@ -215,7 +258,18 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
     })
     .catch(error => {
       console.error("Error fetching videos:", error);
-      document.getElementById("latest-video").textContent = "Error loading videos.";
+      
+      // More specific error messages
+      let errorMessage = "Error loading videos.";
+      if (error.message.includes("quota")) {
+        errorMessage = "YouTube API quota exceeded. Please try again later.";
+      } else if (error.message.includes("403")) {
+        errorMessage = "YouTube API access denied. Please check configuration.";
+      } else if (error.message.includes("404")) {
+        errorMessage = "Channel or videos not found.";
+      }
+      
+      document.getElementById("latest-video").textContent = errorMessage;
       document.getElementById("most-viewed-video").textContent = "";
       document.getElementById("most-loved-video").textContent = "";
     });
