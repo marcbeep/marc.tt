@@ -163,7 +163,7 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
           // Determine the most recent, most viewed, and most loved videos.
           let latestVideo = videos.find(video => video.id === latestVideoId) || videos[0];
           let mostViewedVideo = null;
-          let mostLovedVideo = null;
+          let highestLikeRateVideo = null;
           let highestViewCount = -1;
           let highestLoveRatio = -1;
           let validVideos = 0;
@@ -187,7 +187,7 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
               const loveRatio = likeCount / viewCount;
               if (loveRatio > highestLoveRatio) {
                 highestLoveRatio = loveRatio;
-                mostLovedVideo = video;
+                highestLikeRateVideo = video;
               }
             } else if (viewCount === 0 && !mostViewedVideo) {
               // If no videos have views, use the first one as fallback
@@ -201,7 +201,7 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
             return;
           }
           if (!mostViewedVideo) mostViewedVideo = latestVideo;
-          if (!mostLovedVideo) mostLovedVideo = latestVideo;
+          if (!highestLikeRateVideo) highestLikeRateVideo = latestVideo;
 
           // Handle edge case where we have very few videos
           if (validVideos <= 1) {
@@ -213,8 +213,8 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
 
           // Determine relationships.
           const isMVSameAsLatest = latestVideo.id === mostViewedVideo.id;
-          const isMLSameAsLatest = latestVideo.id === mostLovedVideo.id;
-          const isMVSameAsML = mostViewedVideo.id === mostLovedVideo.id;
+          const isMLSameAsLatest = latestVideo.id === highestLikeRateVideo.id;
+          const isMVSameAsML = mostViewedVideo.id === highestLikeRateVideo.id;
 
           // --- LOGIC IMPLEMENTATION ---
           // 1. Always show the most recent video.
@@ -223,14 +223,14 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
           let showMostLoved = true;
 
           if (isMVSameAsLatest && isMLSameAsLatest) {
-            latestBadgeText += " (This was also my most viewed and loved)";
+            latestBadgeText += " (This was also my most viewed and had the highest like rate)";
             showMostViewed = false;
             showMostLoved = false;
           } else if (isMVSameAsLatest && !isMLSameAsLatest) {
             latestBadgeText += " (This was also my most viewed)";
             showMostViewed = false;
           } else if (isMLSameAsLatest && !isMVSameAsLatest) {
-            latestBadgeText += " (This was also my most loved)";
+            latestBadgeText += " (This also had the highest like rate)";
             showMostLoved = false;
           }
 
@@ -239,8 +239,8 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
           // 2. Next, show the most viewed video if it's not the same as the most recent.
           if (showMostViewed) {
             let mostViewedBadgeText = "🔥 Most Viewed";
-            if (mostViewedVideo.id === mostLovedVideo.id) {
-              mostViewedBadgeText += " (This was also my most loved)";
+            if (mostViewedVideo.id === highestLikeRateVideo.id) {
+              mostViewedBadgeText += " (This also had the highest like rate)";
               showMostLoved = false;
             }
             document.getElementById("most-viewed-video").innerHTML = createVideoElement(mostViewedVideo, mostViewedBadgeText);
@@ -248,9 +248,9 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
             document.getElementById("most-viewed").style.display = "none";
           }
 
-          // 3. Next, if the most loved video is not the same as both the most recent and most viewed, show it.
+          // 3. Next, if the highest like rate video is not the same as both the most recent and most viewed, show it.
           if (showMostLoved) {
-            document.getElementById("most-loved-video").innerHTML = createVideoElement(mostLovedVideo, "❤️ Most Loved by the Audience");
+            document.getElementById("most-loved-video").innerHTML = createVideoElement(highestLikeRateVideo, "📈 Highest Like Rate");
           } else {
             document.getElementById("most-loved").style.display = "none";
           }
