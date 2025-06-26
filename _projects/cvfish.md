@@ -10,7 +10,7 @@ emoji: "🎣"
 
 <div class="video-container">
   <iframe
-    src="https://www.youtube.com/watch?v=jDpw5Dzt0Dg"
+    src="https://www.youtube.com/embed/jDpw5Dzt0Dg?si=Npx5FjgoT6lLxP1C"
     title="CVFish Demo"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
