@@ -19,7 +19,7 @@ Here are some of the projects I've worked on:
     </div>
     <div class="project-content">
       <div class="project-title-row">
-        <span class="project-emoji">{{ project.emoji | default: "🔨" }}</span>
+        <img src="{{ project.logo }}" alt="{{ project.title }} logo" class="project-logo">
         <strong>{{ project.title }}</strong>
       </div>
       <div class="project-description">{{ project.description }}</div>

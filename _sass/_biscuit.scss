@@ -741,17 +741,25 @@ pre > code {
     .project-title-row {
       display: flex;
       align-items: center;
+      justify-content: flex-start;
       margin-bottom: 0.5rem;
+      width: 100%;
 
-      .project-emoji {
-        font-size: 1.5rem;
+      .project-logo {
+        width: 2.5rem;
+        height: 2.5rem;
         margin-right: 0.75rem;
+        border-radius: 0.5rem;
+        object-fit: cover;
         transition: transform 0.2s ease;
+        flex-shrink: 0;
       }
 
       strong {
         font-size: 1.1rem;
         transition: color 0.2s ease;
+        flex-grow: 1;
+        text-align: left;
       }
     }
   }
@@ -779,7 +787,7 @@ pre > code {
 
     .project-content {
       .project-title-row {
-        .project-emoji {
+        .project-logo {
           transform: scale(1.1);
         }
 
