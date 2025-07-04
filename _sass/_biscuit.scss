@@ -72,47 +72,100 @@ a:active {
 #footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 3rem 0;
+  gap: 1.5rem;
+  padding: 2rem 0;
   width: 100%;
   max-width: 35rem;
   margin: 0 auto;
   box-sizing: border-box;
+  font-size: 0.85rem;
+
+  .footer-divider {
+    width: 100%;
+    height: 2px;
+    background: var(--color-accent);
+    opacity: 0.15;
+    border-radius: 1px;
+  }
 
   .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
     width: 100%;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 
-  .footer-links {
+  .footer-about {
+    flex: 1;
+    text-align: center;
+    
+    @media (min-width: 768px) {
+      text-align: left;
+      padding-right: 2rem;
+    }
+    
+    .footer-name {
+      color: var(--color-dark);
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 0 0.75rem 0;
+      font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+      letter-spacing: -0.02em;
+    }
+    
+    .footer-bio {
+      color: var(--color-secondary);
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin: 0 0 0.75rem 0;
+      font-weight: 400;
+    }
+    
+    .footer-signature {
+      color: var(--color-secondary);
+      font-size: 0.75rem;
+      font-weight: 400;
+      margin: 0;
+      opacity: 0.7;
+      font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+    }
+  }
+
+  .footer-actions {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 1.25rem;
-    width: 100%;
+    align-items: center;
+    
+    @media (min-width: 768px) {
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 0.75rem;
     
     .social-link {
-      color: var(--color-primary);
+      color: var(--color-secondary);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0.75rem;
+      justify-content: center;
+      padding: 0.5rem;
       border-radius: 6px;
       transition: all 0.2s ease;
       
-      .material-symbols-rounded {
-        font-size: 18px;
+      i {
+        font-size: 16px;
         line-height: 1;
-      }
-      
-      span:not(.material-symbols-rounded) {
-        font-size: 0.9rem;
-        font-weight: 500;
       }
       
       &:hover {
@@ -123,77 +176,76 @@ a:active {
     }
   }
 
-  .footer-signature {
-    color: var(--color-secondary);
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: center;
-    font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
-  }
-
-  .footer-divider {
-    width: 100%;
-    height: 2px;
+  .newsletter-cta {
     background: var(--color-accent);
-    opacity: 0.15;
-    border-radius: 1px;
-  }
-
-  .newsletter-link-box {
-    background: var(--color-highlight-light);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
+    color: var(--color-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
     transition: all 0.2s ease;
-    border: 2px solid transparent;
-    font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+    white-space: nowrap;
     
     &:hover {
-      background: var(--color-highlight-dark);
-      border-color: var(--color-accent);
+      background: var(--color-dark);
       transform: translateY(-2px);
-    }
-    
-    a {
-      color: var(--color-dark);
-      text-decoration: none;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      width: 100%;
-      height: 100%;
-      
-      .material-symbols-rounded {
-        font-size: 20px;
-        line-height: 1;
-      }
-      
-      span:not(.material-symbols-rounded) {
-        font-size: 1rem;
-      }
+      box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
     }
   }
+
+
 }
 
 @media (max-width: 600px) {
   #footer {
-    padding: 2rem 1rem;
-    gap: 1.5rem;
+    padding: 1.25rem 1rem;
+    gap: 1rem;
     
-    .footer-links {
-      gap: 1rem;
+    .footer-content {
+      gap: 1.25rem;
+    }
+    
+    .footer-about {
+      text-align: left;
+      padding-right: 0;
       
-      .social-link {
-        padding: 0.4rem 0.6rem;
+      .footer-name {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+      }
+      
+      .footer-bio {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+      }
+      
+      .footer-signature {
+        font-size: 0.7rem;
       }
     }
     
-    .newsletter-link-box {
-      padding: 0.875rem 1.25rem;
+    .footer-actions {
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .footer-social {
+      gap: 0.5rem;
+      
+      .social-link {
+        padding: 0.45rem;
+        
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+    
+    .newsletter-cta {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
     }
   }
 }
