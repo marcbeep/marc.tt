@@ -802,6 +802,34 @@ pre > code {
   }
 }
 
+/* Project Title Container Styles */
+.project-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  gap: 1rem;
+
+  .project-title-logo {
+    height: 2.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    flex-shrink: 0;
+    
+    @media (min-width: 48rem) {
+      height: 2.75rem;
+    }
+  }
+
+  .project-title {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+
 /* Project Meta Styles */
 .project-meta {
   display: flex;

@@ -20,7 +20,12 @@ layout: default
     </time>
     {% endif %}
     
-    <h1 class="project-title">{{ page.title }}</h1>
+    <div class="project-title-container">
+      {% if page.logo %}
+      <img src="{{ page.logo }}" alt="{{ page.title }} logo" class="project-title-logo">
+      {% endif %}
+      <h1 class="project-title">{{ page.title }}</h1>
+    </div>
     
     {% if page.description %}
     <blockquote class="project-description">
