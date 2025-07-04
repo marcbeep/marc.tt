@@ -7,6 +7,7 @@ description: "A digital product passport solution for clothing brands."
 visit: "https://worldtag.co.uk"
 date: 2024-10-29
 emoji: "🏷️"
+logo: "assets/projects/worldtag/logo.png"
 ---
 
 <div class="video-container">

@@ -10,6 +10,7 @@ external_links:
     url: "https://github.com/marcbeep/codeduck"
 date: 2025-06-13
 emoji: "🦆"
+logo: "assets/projects/code/logo.png"
 ---
 
 <figure>

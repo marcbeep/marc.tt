@@ -10,6 +10,7 @@ external_links:
     url: "https://github.com/marcbeep/spenny"
 date: 2024-06-01
 emoji: "💷"
+logo: "assets/projects/spenny/logo.png"
 ---
 
 <div class="video-container">

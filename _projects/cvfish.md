@@ -6,6 +6,7 @@ title: "CVFish"
 description: "Helps students get their first jobs."
 date: 2024-07-19
 emoji: "🎣"
+logo: "assets/projects/cvfish/logo.png"
 ---
 
 <div class="video-container">
