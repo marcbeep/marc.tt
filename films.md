@@ -40,11 +40,11 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
     border-radius: 8px;
     margin-bottom: 5px;
     transition: transform 0.2s ease-in-out;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-highlight-dark);
   }
   .video-item a:hover img {
     transform: scale(1.02);
-    border-color: #b0b0b0;
+    border-color: var(--color-accent);
   }
   .video-item h3 {
     font-size: 1.5em;
@@ -52,7 +52,7 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
     width: 100%;
   }
   .video-item small {
-    color: #666;
+    color: var(--color-secondary);
     font-size: 0.9em;
   }
   

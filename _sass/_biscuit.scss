@@ -1392,6 +1392,30 @@ pre > code {
   }
 }
 
+/* Material Icons */
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 24;
+  font-family: var(--font-icons);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Post Banner */
+.post-banner {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-subtle);
+}
+
 /* Film Styles */
 .film {
   margin-bottom: 3rem;

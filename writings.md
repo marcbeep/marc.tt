@@ -22,7 +22,7 @@ Here's a collection of my written thoughts.
 
 <style>
 .post-date {
-  color: #666;
+  color: var(--color-secondary);
   font-size: 0.9em;
   font-family: var(--font-mono);
 }
