@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <figure>
-  <img src="assets/imgs/home.webp" alt="Me & a penguin in Lisbon">
-  <figcaption>Me & a penguin in Lisbon. What a crossover</figcaption>
+  <img src="assets/imgs/home.jpeg" alt="My parents & I at my graduation, shot on film">
+  <figcaption>My parents & I at my graduation, shot on film</figcaption>
 </figure>
 
 ## Some achievements of mine
@@ -176,6 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
 Here's to some more.
 
 <figure>
-  <img src="assets/imgs/speaking.webp" alt="Me speaking on stage">
-  <figcaption>Me (far left) speaking on stage at Design Your Future 2024</figcaption>
+  <img src="assets/imgs/speaking.jpeg" alt="Me speaking on stage at Design Your Future 2024">
+  <figcaption>Me speaking on stage at Design Your Future 2024</figcaption>
 </figure>
