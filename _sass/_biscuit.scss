@@ -1,29 +1,34 @@
 :root {
   font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
   
-  /* Primary Color Palette */
-  --color-primary: #37352f;
-  --color-secondary: #787774;
-  --color-accent: #3cb371; /* Muted green accent */
+  /* Primary Color Palette - HSL */
+  --color-primary: hsl(30, 8%, 20%);      /* #37352f */
+  --color-secondary: hsl(30, 3%, 47%);     /* #787774 */
+  --color-accent: hsl(146, 52%, 49%);      /* #3cb371 */
   
-  /* Background Colors */
-  --color-light: #ffffff;
-  --color-dark: #37352f;
-  --color-quote-bg: #f7f6f3;
+  /* Background Colors - HSL */
+  --color-light: hsl(0, 0%, 100%);         /* #ffffff */
+  --color-dark: hsl(30, 8%, 20%);          /* #37352f */
+  --color-quote-bg: hsl(45, 20%, 96%);     /* #f7f6f3 */
   
-  /* Highlight Colors */
-  --color-highlight-light: #eafaf1; /* Light green highlight */
-  --color-highlight-dark: #c8e6d4; /* Slightly darker green for active state */
+  /* Highlight Colors - HSL */
+  --color-highlight-light: hsl(146, 52%, 96%); /* #eafaf1 */
+  --color-highlight-dark: hsl(146, 52%, 87%);  /* #c8e6d4 */
   
-  /* Shadow Colors */
-  --shadow-accent-light: rgba(60, 183, 113, 0.1);
-  --shadow-accent-medium: rgba(60, 183, 113, 0.2);
-  --shadow-subtle: rgba(0, 0, 0, 0.05);
+  /* Shadow Colors - HSL with alpha */
+  --shadow-accent-light: hsl(146, 52%, 49%, 0.1);
+  --shadow-accent-medium: hsl(146, 52%, 49%, 0.2);
+  --shadow-subtle: hsl(0, 0%, 0%, 0.05);
   
-  /* RGB Values for Accent Color (for use in rgba functions) */
-  --accent-r: 60;
-  --accent-g: 183;
-  --accent-b: 113;
+  /* HSL Values for Accent Color (for dynamic color generation) */
+  --accent-h: 146;
+  --accent-s: 52%;
+  --accent-l: 49%;
+  
+  /* Utility: Generate accent color variations dynamically */
+  --accent-lighter: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 15%));
+  --accent-darker: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 15%));
+  --accent-muted: hsl(var(--accent-h), calc(var(--accent-s) - 20%), var(--accent-l));
 }
 
 html {
