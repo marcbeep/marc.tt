@@ -19,57 +19,92 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
     text-align: left;
     padding: 0;
   }
-  .video-section {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .video-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .video-item a {
-    color: inherit;
-    display: block;
-    width: 100%;
-    text-decoration: none;
-  }
-  .video-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    transition: transform 0.2s ease-in-out;
-    border: 2px solid var(--color-highlight-dark);
-  }
-  .video-item a:hover img {
-    transform: scale(1.02);
-    border-color: var(--color-accent);
-  }
-  .video-item h3 {
-    font-size: 1.5em;
-    margin: 5px 0;
-    width: 100%;
-  }
-  .video-item small {
-    color: var(--color-secondary);
-    font-size: 0.9em;
-  }
   
   /* Grid layout for larger screens */
   @media (min-width: 768px) {
     #featured-videos {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
+      gap: 1.5rem;
     }
-    .video-section {
+  }
+  
+  /* Video item styling to match project cards */
+  .video-item {
+    padding: 1.5rem;
+    background: var(--color-light);
+    border-radius: 8px;
+    border: 2px solid var(--color-accent);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--color-dark);
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  
+  .video-item a {
+    color: inherit;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+    transition: transform 0.2s ease;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  
+  .video-item h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    width: 100%;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    line-height: 1.3;
+  }
+  
+  .video-item small {
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    transition: color 0.2s ease;
+    opacity: 0.8;
+  }
+  
+  /* Hover effects to match project cards */
+  .video-item:hover {
+    transform: translateY(-2px);
+    background: var(--color-accent);
+    color: var(--color-light);
+    box-shadow: 0 4px 12px var(--shadow-accent-medium);
+  }
+  
+  .video-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .video-item:hover h3 {
+    color: var(--color-light);
+  }
+  
+  .video-item:hover small {
+    color: var(--color-light);
+    opacity: 0.9;
+  }
+  
+  @media (min-width: 768px) {
+    .video-item {
       margin-bottom: 0;
-    }
-    .video-item img {
-      display: block;
-      aspect-ratio: 16/9;
-      object-fit: cover;
     }
   }
 </style>
