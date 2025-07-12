@@ -24,6 +24,6 @@ Here's a collection of my written thoughts.
 .post-date {
   color: #666;
   font-size: 0.9em;
-  font-family: "Martian Mono", monospace;
+  font-family: var(--font-mono);
 }
 </style>
