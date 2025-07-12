@@ -1,13 +1,29 @@
 :root {
   font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  
+  /* Primary Color Palette */
   --color-primary: #37352f;
   --color-secondary: #787774;
   --color-accent: #3cb371; /* Muted green accent */
-  --color-highlight-light: #eafaf1; /* Light green highlight */
-  --color-highlight-dark: #c8e6d4; /* Slightly darker green for active state */
+  
+  /* Background Colors */
   --color-light: #ffffff;
   --color-dark: #37352f;
   --color-quote-bg: #f7f6f3;
+  
+  /* Highlight Colors */
+  --color-highlight-light: #eafaf1; /* Light green highlight */
+  --color-highlight-dark: #c8e6d4; /* Slightly darker green for active state */
+  
+  /* Shadow Colors */
+  --shadow-accent-light: rgba(60, 183, 113, 0.1);
+  --shadow-accent-medium: rgba(60, 183, 113, 0.2);
+  --shadow-subtle: rgba(0, 0, 0, 0.05);
+  
+  /* RGB Values for Accent Color (for use in rgba functions) */
+  --accent-r: 60;
+  --accent-g: 183;
+  --accent-b: 113;
 }
 
 html {
@@ -190,7 +206,7 @@ a:active {
     &:hover {
       background: var(--color-dark);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+      box-shadow: 0 4px 12px var(--shadow-accent-medium);
     }
   }
 
@@ -664,7 +680,7 @@ pre > code {
   min-width: 200px;
   background-color: var(--color-light);
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(60, 183, 113, 0.1);
+  box-shadow: 0 4px 20px var(--shadow-accent-light);
   border: 2px solid var(--color-accent);
   opacity: 0;
   transform: translateY(-10px);
@@ -823,7 +839,7 @@ pre > code {
     transform: translateY(-2px);
     background: var(--color-accent);
     color: var(--color-light);
-    box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+    box-shadow: 0 4px 12px var(--shadow-accent-medium);
 
     .project-meta-info {
       .project-number {
@@ -934,7 +950,7 @@ pre > code {
   &:hover {
     background: var(--color-accent);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+    box-shadow: 0 4px 12px var(--shadow-accent-medium);
   }
 
   a {
@@ -1071,7 +1087,7 @@ pre > code {
     transform: translateY(-2px);
     background: var(--color-accent);
     color: var(--color-light);
-    box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+    box-shadow: 0 4px 12px var(--shadow-accent-medium);
     
     .activity-icon {
       transform: scale(1.05);
@@ -1149,7 +1165,7 @@ pre > code {
     height: auto;
     display: block;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px var(--shadow-subtle);
   }
 }
 
@@ -1292,7 +1308,7 @@ pre > code {
       background: var(--color-accent);
       color: var(--color-light);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+      box-shadow: 0 4px 12px var(--shadow-accent-medium);
     }
 
     &.nav-previous {
@@ -1401,7 +1417,7 @@ pre > code {
     height: auto;
     display: block;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px var(--shadow-subtle);
   }
 }
 
@@ -1419,7 +1435,7 @@ pre > code {
   &:hover {
     background: var(--color-accent);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(60, 183, 113, 0.2);
+    box-shadow: 0 4px 12px var(--shadow-accent-medium);
   }
 
   a {
