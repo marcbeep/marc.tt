@@ -15,7 +15,7 @@ Here's a collection of my written thoughts.
 ## {{ year.name }}
 
 {% for post in year.items %}
-- <span class="post-date">{{ post.date | date: "%B %d" }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a>
+<span class="post-date">{{ post.date | date: "%B %d" }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
 {% endfor %}
