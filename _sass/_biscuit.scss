@@ -588,6 +588,30 @@ pre > code {
   font-size: 1.25rem;
 }
 
+.navbar-brand-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-avatar {
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.navbar-avatar:hover {
+  transform: scale(1.05);
+}
+
+.navbar-logo {
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+  opacity: 0.8;
+}
+
 /* Right side menu */
 .navbar-right {
   position: relative;
