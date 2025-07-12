@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <figure>
-  <img src="assets/imgs/home.jpeg" alt="My parents & I at my graduation, shot on film">
+  <img src="assets/index/home.jpeg" alt="My parents & I at my graduation, shot on film">
   <figcaption>My parents & I at my graduation, shot on film</figcaption>
 </figure>
 
@@ -176,6 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
 Here's to some more.
 
 <figure>
-  <img src="assets/imgs/speaking.jpeg" alt="Me speaking on stage at Design Your Future 2024">
+  <img src="assets/index/speaking.jpeg" alt="Me speaking on stage at Design Your Future 2024">
   <figcaption>Me speaking on stage at Design Your Future 2024</figcaption>
 </figure>

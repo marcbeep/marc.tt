@@ -14,7 +14,7 @@
     <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}" />
     <meta property="og:type" content="{{ page.og_type | default: 'website' }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/imgs/og-default.png{% endif %}" />
+    <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/index/og-default.png{% endif %}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -56,7 +56,7 @@
     <nav class="navbar">
       <div class="navbar-container">
         <a href="{{ site.baseurl }}/" class="navbar-brand">
-          <img src="{{ '/assets/imgs/navbar-logo.png' | absolute_url }}" alt="Marc Beepath" height="30" width="auto">
+          <img src="{{ '/assets/index/navbar-logo.png' | absolute_url }}" alt="Marc Beepath" height="30" width="auto">
         </a>
 
         <div class="navbar-right">
