@@ -109,6 +109,9 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
   }
 </style>
 
+<!-- Video Error Message Container -->
+<div id="video-error-message" style="display:none;"></div>
+
 <!-- Video Content Container -->
 <div class="video-container">
   <div id="featured-videos">
@@ -307,10 +310,11 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
       } else if (error.message.includes("404")) {
         errorMessage = "Channel or videos not found.";
       }
-      
-      document.getElementById("latest-video").textContent = errorMessage;
-      document.getElementById("most-viewed-video").textContent = "";
-      document.getElementById("most-loved-video").textContent = "";
+      const ytLink = '<a href="https://youtube.com/@marcbeep" target="_blank" rel="noopener">my YouTube channel</a>';
+      const blockquote = `<blockquote>We\'re having trouble loading videos right now. You can still check out all my films on ${ytLink}.</blockquote>`;
+      document.getElementById("video-error-message").innerHTML = blockquote;
+      document.getElementById("video-error-message").style.display = "block";
+      document.getElementById("featured-videos").style.display = "none";
     });
 </script>
 
