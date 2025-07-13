@@ -219,10 +219,14 @@ See more on my [YouTube.](https://youtube.com/@marcbeep)
                 mostViewedVideo = video;
               }
 
-              const loveRatio = likeCount / viewCount;
-              if (loveRatio > highestLoveRatio) {
-                highestLoveRatio = loveRatio;
-                highestLikeRateVideo = video;
+              // Only consider videos with 100+ views for "most loved" calculation
+              // This prevents low-view videos with artificially high like ratios
+              if (viewCount >= 100) {
+                const loveRatio = likeCount / viewCount;
+                if (loveRatio > highestLoveRatio) {
+                  highestLoveRatio = loveRatio;
+                  highestLikeRateVideo = video;
+                }
               }
             } else if (viewCount === 0 && !mostViewedVideo) {
               // If no videos have views, use the first one as fallback
