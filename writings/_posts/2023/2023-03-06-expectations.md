@@ -3,7 +3,7 @@ layout: writings
 title: Letting go of Expectations
 permalink: expectations
 categories: writings
-description: Gracefully accept life.
+description: This essay is about gracefully accepting life.
 ---
 
 Life does this funny thing where it never works out the way I've imagined.

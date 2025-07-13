@@ -3,8 +3,8 @@ layout: writings
 title: Speedrunning in your 20s
 permalink: speedrunning
 categories: writings
-description: Chill out.
 image: /assets/writings/2023/speedrunning.webp
+description: This essay is about relaxing.
 ---
 
 A common feeling amongst people my age is to have everything in their life sorted by the age of 30.
