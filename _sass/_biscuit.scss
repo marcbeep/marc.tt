@@ -6,29 +6,29 @@
   
   font-family: var(--font-primary);
   
-  /* Primary Color Palette - Hex */
-  --color-primary: #0101FB;
-  --color-secondary: #787774;
-  --color-accent: #0101FB;
+  /* Primary Color Palette - Hex (Used to be #0101FB)*/ 
+  --color-primary: #000000;
+  --color-secondary: #666666;
+  --color-accent: #000000;
   
   /* Background Colors - Hex */
   --color-light: #fafafa;
-  --color-dark: #0101FB;
-  --color-quote-bg: #f7f6f3;
+  --color-dark: #000000;
+  --color-quote-bg: #f5f5f5;
   
   /* Highlight Colors - Hex */
-  --color-highlight-light: #e6e6ff;
-  --color-highlight-dark: #ccccff;
+  --color-highlight-light: #f0f0f0;
+  --color-highlight-dark: #e0e0e0;
   
   /* Shadow Colors - Hex with alpha */
-  --shadow-accent-light: rgba(1, 1, 251, 0.1);
-  --shadow-accent-medium: rgba(1, 1, 251, 0.2);
+  --shadow-accent-light: rgba(0, 0, 0, 0.08);
+  --shadow-accent-medium: rgba(0, 0, 0, 0.15);
   --shadow-subtle: rgba(0, 0, 0, 0.05);
   
   /* Accent Color Variations */
-  --accent-lighter: #4d4dff;
-  --accent-darker: #0000cc;
-  --accent-muted: #0000b3;
+  --accent-lighter: #333333;
+  --accent-darker: #000000;
+  --accent-muted: #555555;
 }
 
 html {
