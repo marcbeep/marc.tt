@@ -10,12 +10,12 @@ external_links:
     url: "https://github.com/marcbeep/codeduck"
 date: 2025-06-13
 emoji: "🦆"
-logo: "assets/projects/code/logo.png"
+logo: "assets/projects/codeduck/logo.png"
 ---
 
 <figure>
-  <img src="assets/projects/code/1.webp" alt="Screenshot of Code">
-  <figcaption>Screenshot of Code</figcaption>
+  <img src="assets/projects/codeduck/1.webp" alt="Screenshot of CodeDuck">
+  <figcaption>Screenshot of CodeDuck</figcaption>
 </figure>
 
 <br>
