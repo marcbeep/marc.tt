@@ -15,7 +15,7 @@ logo: "assets/projects/monty/logo.png"
 
 <figure>
   <img src="assets/projects/monty/1.png" alt="Screenshot of Monty">
-  <figcaption>Screenshot of Monty</figcaption>
+  <figcaption>Monty's Dashboard</figcaption>
 </figure>
 
 <br>
@@ -32,3 +32,31 @@ Features include:
   - Stress Test using historic dates
   - Monte Carlo simulation with projection bands chart and return distribution curve
 4. Portfolio comparison tool
+
+## More Screenshots
+
+<figure>
+  <img src="assets/projects/monty/2.png" alt="Screenshot of Monty">
+  <figcaption>Monty's Portfolio Builder Tool</figcaption>
+</figure>
+
+<br>
+
+<figure>
+  <img src="assets/projects/monty/3.png" alt="Screenshot of Monty">
+  <figcaption>Monty's Stress Test Results</figcaption>
+</figure>
+
+<br>
+
+<figure>
+  <img src="assets/projects/monty/4.png" alt="Screenshot of Monty">
+  <figcaption>Monty's Monte Carlo results</figcaption>
+</figure>
+
+<br>
+
+<figure>
+  <img src="assets/projects/monty/5.png" alt="Screenshot of Monty">
+  <figcaption>Monty's Portfolio Comparison Tool</figcaption>
+</figure>
