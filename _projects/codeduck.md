@@ -14,7 +14,7 @@ logo: "assets/projects/codeduck/logo.png"
 ---
 
 <figure>
-  <img src="assets/projects/codeduck/1.webp" alt="Screenshot of CodeDuck">
+  <img src="assets/projects/codeduck/1.png" alt="Screenshot of CodeDuck">
   <figcaption>Screenshot of CodeDuck</figcaption>
 </figure>
 
