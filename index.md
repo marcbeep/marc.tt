@@ -5,8 +5,9 @@ title: Home
 
 # Hi I'm Marc
 
-I'm a postgraduate Computer Science student at the University of Liverpool from Trinidad and Tobago 🇹🇹
-I also work as a Software Engineer, currently based in the UK.
+I'm a Software Engineer from Trinidad and Tobago 🇹🇹 currently based in London, UK. 
+
+I recently graduated from the University of Liverpool where I completed both my Bachelors and Masters in Advanced Computer Science. 
 
 Check out my [projects](/projects) to see what I've been working on.
 
