@@ -5,7 +5,7 @@ title: Home
 
 # Hi I'm Marc
 
-I'm a Software Engineer from Trinidad and Tobago 🇹🇹 currently based in London, UK. 
+I'm a Software Engineer from Trinidad and Tobago currently based in London.
 
 I recently graduated from the University of Liverpool where I completed both my Bachelors and Masters in Advanced Computer Science. 
 
