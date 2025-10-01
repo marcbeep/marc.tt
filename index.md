@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="achievements-timeline">
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">SEP 2024</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">code_blocks</span></span><span class="timeline-date">SEP 2024</span></span>
     <div class="timeline-content">Began working as a Software Engineer with the folks at <a href="https://ultamation.com">Ultamation</a> in the Liverpool Science Park whilst doing my Masters</div>
   </div>
   <div class="timeline-item">
@@ -133,11 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content">Started my MSc in Advanced Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">verified</span></span><span class="timeline-date">JUN 2024</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">school</span></span><span class="timeline-date">JUN 2024</span></span>
     <div class="timeline-content">Graduated from the University of Liverpool with a BSc in Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">JUN 2023</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">code_blocks</span></span><span class="timeline-date">JUN 2023</span></span>
     <div class="timeline-content">Interned as a Software Engineer for the summer at <a href="https://octopus.energy">Octopus Energy</a> in Manchester</div>
   </div>
   <div class="timeline-item">
@@ -145,15 +145,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content"><a href="/wildroutes">Wildroutes</a> won first place at the Design Your Future Startup Pitching Competition</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">groups</span></span><span class="timeline-date">SEP 2022</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">SEP 2022</span></span>
     <div class="timeline-content">Began working as a Careers Coach at the University of Liverpool, whilst studying for my Bachelors</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">eco</span></span><span class="timeline-date">JUN 2022</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">work</span></span><span class="timeline-date">JUN 2022</span></span>
     <div class="timeline-content">Spent the summer interning at <a href="https://voicefornature.com">Voice for Nature</a></div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">celebration</span></span><span class="timeline-date">SEP 2021</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">movie</span></span><span class="timeline-date">SEP 2021</span></span>
     <div class="timeline-content"><a href="/goodbyeforever">Goodbye Forever</a> became a tiny local hit</div>
   </div>
   <div class="timeline-item">
@@ -161,11 +161,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="timeline-content"><a href="/wrecked">Wrecked</a> is officially selected for the T&T Film Festival</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">military_tech</span></span><span class="timeline-date">JUN 2020</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">trophy</span></span><span class="timeline-date">JUN 2020</span></span>
     <div class="timeline-content">Awarded a <a href="https://napcol.bluechiptt.com/scholarships-2020/">national scholarship</a> from the Government of Trinidad & Tobago for excellence in Computer Science</div>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">stars</span></span><span class="timeline-date">MAY 2020</span></span>
+    <span class="timeline-date-row"><span class="timeline-icon"><span class="material-symbols-rounded">trophy</span></span><span class="timeline-date">MAY 2020</span></span>
     <div class="timeline-content">Earned the Duke of Edinburgh Gold Award and met the President of Trinidad and Tobago</div>
   </div>
   <div class="timeline-item">
